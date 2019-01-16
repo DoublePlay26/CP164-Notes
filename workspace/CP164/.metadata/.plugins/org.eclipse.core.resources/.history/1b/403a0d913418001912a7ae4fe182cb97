@@ -1,0 +1,30 @@
+"""
+------------------------------------------------------------------------
+[program description]
+------------------------------------------------------------------------
+Author: Nicolas Mills
+ID:     180856100
+Email:  mill6100@mylaurier.ca
+__updated__ = 2019-01-14
+------------------------------------------------------------------------
+"""
+from Movie_utilities import *
+# Movie is imported in Movie_utilities
+
+title = "Title"
+year = 1999
+director = "Director"
+rating = 4.5
+genres = [3,4,5,8]
+my_movie = Movie(title, year, director, rating, genres)
+
+my_movie.genres_list_string()
+
+file_handle = open('movies.txt', 'r')
+#movie_list = read_movies(file_handle)
+
+#for movie in movie_list:
+#    print(movie)
+    
+line = "Title|1999|Director|4.5|3,4,5,8"
+read_movie(line)

@@ -1,0 +1,40 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\.metadata\.plugins\org.eclipse.core.resources\.projects\mill6100_lab01\com.python.pydev.analysis\v2_indexcache
+t01|1547507405178909000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t01.py
+t03|1547507426534676000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t03.py
+t02|1547507417071000000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t02.py
+t05|1547505999825129000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t05.py
+t04|1547507431644095000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t04.py
+t07|1547510456869008000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t07.py
+t06|1547506311690487000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t06.py
+-- END DISKCACHE
+-- START DICTIONARY
+12
+4=t01
+3=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t01.py
+5=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t07.py
+7=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t04.py
+2=t02
+9=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t06.py
+11=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t05.py
+12=t05
+1=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_lab01\src\t02.py
+8=t04
+6=t07
+10=t06
+-- END DICTIONARY
+-- START TREE 1
+8
+dir|2|director!1^15#1*19@director!3^15#1*35@
+fil|1|file_handle!5^13#1*51@
+gen|4|genres!1^17#1*19@genres!7^13#1*67@genres_list!1^21#1*19@genres!3^17#1*35@
+mov|2|movies!5^15#1*51@movie_string!9^13#1*83@
+my_|4|my_movie!9^15#1*83@my_movie!3^19#1*35@my_movie!1^19#1*19@my_movie!11^13#1*99@
+rat|2|rating!1^16#1*19@rating!3^16#1*35@
+tit|2|title!3^13#1*35@title!1^13#1*19@
+yea|2|year!3^14#1*35@year!1^14#1*19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE
