@@ -2,9 +2,9 @@
 -------------------------------------------------------
 LabAssignment  Testing
 -------------------------------------------------------
-Author  your name (add your partner name if you are working in pairs)
-ID      your ID (add your partner ID if you are working in pairs)
-Email   your Laurier email address (add your partner's email if you are working in pairs)
+Author  Nicolas Mills
+ID      180856100
+Email   mill6100@mylaurier.ca
 Version yyyy-mm-dd
 -------------------------------------------------------
 

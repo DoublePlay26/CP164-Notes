@@ -1,0 +1,295 @@
+
+-------------------------------------------------------
+Assignment 2  Testing
+-------------------------------------------------------
+Author  Nicolas Mills
+ID      180856100
+Email   mill6100@mylaurier.ca
+Version 2019-01-24
+-------------------------------------------------------
+
+-------------------------------------------------------
+Task 1
+-------------------------------------------------------
+Enter a year: 2007
+Movies in the year 2007: 
+==============================================
+Title:    I Am Legend
+Year:     2007
+Director: Francis Lawrence
+Rating:   7.1
+Genres:   science fiction, action
+==============================================
+Title:    Stardust
+Year:     2007
+Director: Matthew Vaughn
+Rating:   7.7
+Genres:   fantasy, comedy
+==============================================
+Title:    Juno
+Year:     2007
+Director: Jason Reitman
+Rating:   7.7
+Genres:   romance, comedy
+==============================================
+Title:    Darjeeling Limited, The
+Year:     2007
+Director: Wes Anderson
+Rating:   7.1
+Genres:   comedy
+
+Enter a year: 1984
+Movies in the year 1984: 
+
+
+-------------------------------------------------------
+Task 2
+-------------------------------------------------------
+Enter a rating: 8
+Movies with a rating >= 8.0: 
+==============================================
+Title:    Star Wars: Episode IV - A New Hope
+Year:     1977
+Director: George Lucas
+Rating:   8.7
+Genres:   science fiction, action
+==============================================
+Title:    Z
+Year:     1969
+Director: Costa-Gavras
+Rating:   8.2
+Genres:   drama
+==============================================
+Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genres:   fantasy, action
+==============================================
+
+Enter a rating: 0
+Movies with a rating >= 0.0: 
+==============================================
+Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+==============================================
+Title:    Dark City
+Year:     1998
+Director: Alex Proyas
+Rating:   7.8
+Genres:   science fiction
+==============================================
+Title:    Zulu
+Year:     1964
+Director: Cy Endfield
+Rating:   7.8
+Genres:   war
+==============================================
+Title:    I Am Legend
+Year:     2007
+Director: Francis Lawrence
+Rating:   7.1
+Genres:   science fiction, action
+==============================================
+Title:    Omega Man, The
+Year:     1971
+Director: Boris Sagal
+Rating:   6.6
+Genres:   science fiction, action
+==============================================
+Title:    Last Man On Earth, The
+Year:     1964
+Director: Ubaldo Ragona
+Rating:   6.9
+Genres:   science fiction
+==============================================
+Title:    Alphaville
+Year:     1965
+Director: Jean-Luc Godard
+Rating:   7.1
+Genres:   science fiction, comedy
+==============================================
+Title:    Stardust
+Year:     2007
+Director: Matthew Vaughn
+Rating:   7.7
+Genres:   fantasy, comedy
+==============================================
+Title:    Juno
+Year:     2007
+Director: Jason Reitman
+Rating:   7.7
+Genres:   romance, comedy
+==============================================
+Title:    Darjeeling Limited, The
+Year:     2007
+Director: Wes Anderson
+Rating:   7.1
+Genres:   comedy
+==============================================
+Title:    Broken Flowers
+Year:     2005
+Director: Jim Jarmusch
+Rating:   7.2
+Genres:   romance, comedy
+==============================================
+Title:    Star Wars: Episode IV - A New Hope
+Year:     1977
+Director: George Lucas
+Rating:   8.7
+Genres:   science fiction, action
+==============================================
+Title:    Horror of Dracula
+Year:     1958
+Director: Terence Fisher
+Rating:   7.4
+Genres:   horror
+==============================================
+Title:    Jason and the Argonauts
+Year:     1963
+Director: Don Chaffey
+Rating:   7.4
+Genres:   fantasy, action
+==============================================
+Title:    Wrong Box, The
+Year:     1966
+Director: Bryan Forbes
+Rating:   7.0
+Genres:   comedy
+==============================================
+Title:    Finding Dory
+Year:     2016
+Director: Andrew Stanton, Angus MacLane
+Rating:   7.5
+Genres:   comedy
+==============================================
+Title:    Manos: The Hands of Fate
+Year:     1966
+Director: Harold P. Warren
+Rating:   1.9
+Genres:   horror
+==============================================
+Title:    Incredibly Strange Creatures Who Stopped Living and Became Mixed-Up Zombies!!?, The
+Year:     1964
+Director: Ray Dennis Steckler
+Rating:   2.2
+Genres:   horror
+==============================================
+Title:    Z
+Year:     1969
+Director: Costa-Gavras
+Rating:   8.2
+Genres:   drama
+==============================================
+Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genres:   fantasy, action
+==============================================
+
+-------------------------------------------------------
+Task 3
+-------------------------------------------------------
+Enter a genre code: 1
+========================================
+Title:    Stardust
+Year:     2007
+Director: Matthew Vaughn
+Rating:   7.7
+Genres:   fantasy, comedy
+========================================
+Title:    Jason and the Argonauts
+Year:     1963
+Director: Don Chaffey
+Rating:   7.4
+Genres:   fantasy, action
+========================================
+Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genres:   fantasy, action
+
+Enter a genre code: 0
+========================================
+Title:    Dark City
+Year:     1998
+Director: Alex Proyas
+Rating:   7.8
+Genres:   science fiction
+========================================
+Title:    I Am Legend
+Year:     2007
+Director: Francis Lawrence
+Rating:   7.1
+Genres:   science fiction, action
+========================================
+Title:    Omega Man, The
+Year:     1971
+Director: Boris Sagal
+Rating:   6.6
+Genres:   science fiction, action
+========================================
+Title:    Last Man On Earth, The
+Year:     1964
+Director: Ubaldo Ragona
+Rating:   6.9
+Genres:   science fiction
+========================================
+Title:    Alphaville
+Year:     1965
+Director: Jean-Luc Godard
+Rating:   7.1
+Genres:   science fiction, comedy
+========================================
+Title:    Star Wars: Episode IV - A New Hope
+Year:     1977
+Director: George Lucas
+Rating:   8.7
+Genres:   science fiction, action
+
+-------------------------------------------------------
+Task 4
+-------------------------------------------------------
+Enter a genre code (-1 TO QUIT): 0
+Enter a genre code (-1 TO QUIT): 6
+Enter a genre code (-1 TO QUIT): -1
+===========================================
+Title:    I Am Legend
+Year:     2007
+Director: Francis Lawrence
+Rating:   7.1
+Genres:   science fiction, action
+===========================================
+Title:    Omega Man, The
+Year:     1971
+Director: Boris Sagal
+Rating:   6.6
+Genres:   science fiction, action
+===========================================
+Title:    Star Wars: Episode IV - A New Hope
+Year:     1977
+Director: George Lucas
+Rating:   8.7
+Genres:   science fiction, action
+
+Enter a genre code (-1 TO QUIT): 1
+Enter a genre code (-1 TO QUIT): 4
+Enter a genre code (-1 TO QUIT): -1
+===========================================
+Title:    Stardust
+Year:     2007
+Director: Matthew Vaughn
+Rating:   7.7
+Genres:   fantasy, comedy
+
+-------------------------------------------------------
+Task 5
+-------------------------------------------------------
+Counts: [6, 3, 1, 3, 8, 1, 5, 0, 4, 1]
+
+-------------------------------------------------------

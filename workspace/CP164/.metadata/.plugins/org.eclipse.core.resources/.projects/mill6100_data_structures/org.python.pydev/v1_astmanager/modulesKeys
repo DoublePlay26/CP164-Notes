@@ -1,3 +1,9 @@
 MODULES_MANAGER_V2
 Movie|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Movie.py
 Movie_utilities|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Movie_utilities.py
+Priority_Queue_array|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Priority_Queue_array.py
+Queue_array|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Queue_array.py
+Queue_circular|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Queue_circular.py
+Stack_array|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Stack_array.py
+mirror|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\mirror.py
+utilities|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\utilities.py
