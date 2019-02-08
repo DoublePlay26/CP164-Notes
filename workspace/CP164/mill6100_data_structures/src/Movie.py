@@ -142,12 +142,13 @@ Genres:   {}""".format(self.title, self.year, self.director, self.rating, genres
 
         # Your code here
         string = ""
-        for num in self.genres:
-            genre_name = Movie.GENRES[num]
-            if num == self.genres[-1]:
-                string += genre_name
-            else:
-                string += genre_name + ", "
+        if self.genres is not None:
+            for num in self.genres:
+                genre_name = Movie.GENRES[num]
+                if num == self.genres[-1]:
+                    string += genre_name
+                else:
+                    string += genre_name + ", "
         return string
 
     def genres_list_string(self):

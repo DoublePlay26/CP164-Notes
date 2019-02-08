@@ -10,6 +10,22 @@
       <link>http://www.eclipse.org</link>
     </image>
     <item>
+      <title><![CDATA[Eclipse Foundation: 15 Years Young]]></title>
+      <link><![CDATA[https://blogs.eclipse.org/post/mike-milinkovich/eclipse-foundation-15-years-young]]></link>
+      <description><![CDATA[Saturday, February 2, 2019 marks the 15th birthday of the Eclipse Foundation. That was the day that it was publicly and officially announced, and the opening day of the first ever EclipseCon conference.]]></description>
+      <pubDate>Fri, 01 Feb 2019 10:00:00 EST</pubDate>
+      <category>news</category>
+      <pressrelease>0</pressrelease>
+    </item>
+     <item>
+      <title><![CDATA[Jakartablogs.ee is Live! PS: Bloggers, We Need You!]]></title>
+      <link><![CDATA[https://blogs.eclipse.org/post/thabang-mashologu/jakartablogsee-live-ps-bloggers-we-need-you]]></link>
+      <description><![CDATA[Jakartablogs.ee is the new blog home for our global community to stay up to date on the latest Jakarta EE news, technologies, best practices, and more.]]></description>
+      <pubDate>Tue, 29 Jan 2019 15:20:00 EST</pubDate>
+      <category>news</category>
+      <pressrelease>0</pressrelease>
+    </item>
+    <item>
       <title><![CDATA[Eclipse Specification Process IV: The Specification Committee Votes]]></title>
       <link><![CDATA[https://blogs.eclipse.org/post/wayne-beaton/eclipse-specification-process-iv-specification-committee-votes]]></link>
       <description><![CDATA[One key difference between Eclipse open source software projects and open source specification projects is that specification projects must be aligned with exactly one specification committee]]></description>
