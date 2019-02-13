@@ -2,9 +2,10 @@
 -- START DISKCACHE_2
 C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\.metadata\.plugins\org.eclipse.core.resources\.projects\mill6100_data_structures\com.python.pydev.analysis\v2_indexcache
 Movie|1549317663414077000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Movie.py
-Priority_Queue_array|1548716445352105000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Priority_Queue_array.py
+Priority_Queue_array|1549431377177927000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Priority_Queue_array.py
 Stack_array|1548877557434121000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Stack_array.py
 mirror|1547666370782918000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\mirror.py
+Graph|1549395150435166000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Graph.py
 Queue_circular|1548108086210728000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Queue_circular.py
 Movie_utilities|1548204200546250000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Movie_utilities.py
 List_array|1549326236592450000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\List_array.py
@@ -12,101 +13,115 @@ utilities|1548718868677614000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\
 Queue_array|1548442992243736000|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Queue_array.py
 -- END DISKCACHE
 -- START DICTIONARY
-29
-12=Priority_Queue_array
+34
+14=Priority_Queue_array
 4=mirror
-11=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Priority_Queue_array.py
-9=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Movie.py
-17=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Stack_array.py
-7=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\List_array.py
-29=Movie.__init__
-13=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Queue_circular.py
-25=Priority_Queue.insert
+13=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Priority_Queue_array.py
+11=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Movie.py
+19=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Stack_array.py
+9=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\List_array.py
+33=Movie.__init__
+15=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Queue_circular.py
+28=Priority_Queue.insert
 2=utilities
-18=Stack_array
-14=Queue_circular
-24=Priority_Queue.__init__
+20=Stack_array
+16=Queue_circular
+27=Priority_Queue.__init__
 3=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\mirror.py
-8=List_array
-19=List
-22=Queue
-16=Queue_array
-10=Movie
-21=Priority_Queue
-28=Stack.__init__
+30=Graph.__init__
+10=List_array
+21=List
+25=Queue
+18=Queue_array
+12=Movie
+24=Priority_Queue
+32=Stack.__init__
 1=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\utilities.py
-26=Priority_Queue._set_first
-5=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Movie_utilities.py
-20=Stack
-15=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Queue_array.py
-23=Queue.__init__
-6=Movie_utilities
-27=List.__init__
+34=Edge.__init__
+29=Priority_Queue._set_first
+7=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Movie_utilities.py
+23=Stack
+17=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Queue_array.py
+26=Queue.__init__
+6=Graph
+8=Movie_utilities
+5=C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Graph.py
+22=Edge
+31=List.__init__
 -- END DICTIONARY
 -- START TREE 1
-15
+17
 arr|3|array_to_queue!1^113#5*18@array_to_stack!1^15#5*18@array_to_pq!1^153#5*18@
 cha|1|CHARS!3^13#1*35@
-gen|1|genre_counts!5^263#5*50@
-get|5|get_by_year!5^163#5*50@get_by_genre!5^210#5*50@get_by_genres!5^233#5*50@get_movie!5^15#5*50@get_by_rating!5^186#5*50@
-lis|1|List!7^15#7*65@
-men|1|menu!5^90#5*50@
+edg|1|Edge!5^13#7*49@
+gen|1|genre_counts!7^263#5*66@
+get|5|get_by_year!7^163#5*66@get_by_genre!7^210#5*66@get_by_genres!7^233#5*66@get_movie!7^15#5*66@get_by_rating!7^186#5*66@
+gra|2|graph_test!5^180#5*50@Graph!5^104#7*49@
+lis|1|List!9^15#7*81@
+men|1|menu!7^90#5*66@
 mid|1|MID!3^14#1*35@
 mir|1|mirror!3^16#5*34@
-mov|1|Movie!9^14#7*81@
+mov|1|Movie!11^14#7*97@
 pq_|1|pq_to_array!1^174#5*18@
-pri|2|priority_queue_test!1^254#5*18@Priority_Queue!11^15#7*97@
-que|4|queue_test!1^192#5*18@Queue!13^13#7*113@Queue!15^14#7*129@queue_to_array!1^134#5*18@
-rea|3|read_genres!5^109#5*50@read_movie!5^37#5*50@read_movies!5^66#5*50@
-sta|3|Stack!17^15#7*145@stack_to_array!1^36#5*18@stack_test!1^55#5*18@
-wri|1|write_movies!5^143#5*50@
+pri|2|priority_queue_test!1^254#5*18@Priority_Queue!13^15#7*113@
+que|4|queue_test!1^192#5*18@Queue!15^13#7*129@Queue!17^14#7*145@queue_to_array!1^134#5*18@
+rea|3|read_genres!7^109#5*66@read_movie!7^37#5*66@read_movies!7^66#5*66@
+sta|3|Stack!19^15#7*161@stack_to_array!1^36#5*18@stack_test!1^55#5*18@
+wri|1|write_movies!7^143#5*66@
 -- END TREE
 -- START TREE 2
-46
-__c|1|__contains__!19&7^80#9*66@
-__e|1|__eq__!10&9^82#9*82@
-__g|1|__getitem__!19&7^29#9*66@
-__h|1|__hash__!10&9^210#9*82@
-__i|10|__iter__!20&17^143#9*146@__iter__!21&11^138#9*98@__iter__!19&7^636#9*66@__init__!10&9^28#9*82@__init__!21&11^17#9*98@__init__!19&7^17#9*66@__init__!22&15^16#9*130@__init__!22&13^15#9*114@__iter__!22&15^117#9*130@__init__!20&17^17#9*146@
-__l|5|__lt__!10&9^98#9*82@__len__!22&15^53#9*130@__len__!19&7^46#9*66@__len__!21&11^42#9*98@__le__!10&9^114#9*82@
-__s|2|__str__!10&9^60#9*82@__setitem__!19&7^60#9*66@
-_co|1|_count!23&13^33#9*115@
-_fi|3|_first!24&11^28#9*99@_first!25&11^72#13*99@_first!26&11^129#13*99@
-_fr|1|_front!23&13^31#9*115@
-_is|1|_is_valid_index!19&7^97#9*66@
-_li|1|_linear_search!19&7^115#9*66@
-_ma|1|_max_size!23&13^29#9*115@
-_re|1|_rear!23&13^32#9*115@
-_se|1|_set_first!21&11^115#9*98@
-_sw|1|_swap!19&7^143#9*66@
-_va|5|_values!27&7^27#9*67@_values!24&11^27#9*99@_values!23&13^30#9*115@_values!23&15^26#9*131@_values!28&17^27#9*147@
-app|2|append!19&7^166#9*66@apply!19&7^182#9*66@
-cle|1|clean!19&7^199#9*66@
-com|2|combine!20&17^107#9*146@combine!19&7^214#9*66@
-cop|1|copy!19&7^234#9*66@
-cou|1|count!19&7^248#9*66@
-dir|1|director!29&9^56#9*83@
-fin|1|find!19&7^267#9*66@
-fir|1|FIRST_YEAR!10&9^21#5*83@
-gen|5|GENRE_CODES!10&9^26#5*83@GENRES!10&9^24#5*83@genres_list_string!10&9^154#9*82@genres_string!10&9^130#9*82@genres!29&9^58#9*83@
-ind|1|index!19&7^287#9*66@
-ins|4|insert!19&7^303#9*66@insert!21&11^54#9*98@insert!22&15^65#9*130@insert!22&13^35#9*114@
-int|1|intersection!19&7^331#9*66@
-is_|8|is_identical!19&7^362#9*66@is_empty!22&15^28#9*130@is_full!22&15^40#9*130@is_empty!20&17^29#9*146@is_empty!21&11^30#9*98@is_empty!19&7^349#9*66@is_full!22&13^57#9*114@is_empty!22&13^54#9*114@
-key|1|key!10&9^197#9*82@
-len|1|length!22&13^60#9*114@
-max|2|max!19&7^381#9*66@MAX_RATING!10&9^20#5*83@
-min|2|min!19&7^400#9*66@MIN_RATING!10&9^19#5*83@
-pee|5|peek!20&17^77#9*146@peek!22&15^100#9*130@peek!22&13^51#9*114@peek!19&7^419#9*66@peek!21&11^77#9*98@
-pop|2|pop!19&7^435#9*66@pop!20&17^58#9*146@
-pre|1|prepend!19&7^463#9*66@
-pus|1|push!20&17^43#9*146@
-rat|1|rating!29&9^57#9*83@
-rem|6|remove_front!19&7^501#9*66@remove!21&11^94#9*98@remove_many!19&7^517#9*66@remove!22&15^82#9*130@remove!19&7^479#9*66@remove!22&13^48#9*114@
-rev|2|reverse!19&7^533#9*66@reverse!20&17^94#9*146@
-spl|4|split!19&7^548#9*66@split_alt!19&7^564#9*66@split_apply!19&7^581#9*66@split_key!19&7^602#9*66@
-tit|1|title!29&9^54#9*83@
-uni|1|union!19&7^618#9*66@
-wri|1|write!10&9^177#9*82@
-yea|1|year!29&9^55#9*83@
+53
+__c|1|__contains__!21&9^80#9*82@
+__e|2|__eq__!12&11^82#9*98@__eq__!22&5^59#9*50@
+__g|1|__getitem__!21&9^29#9*82@
+__h|1|__hash__!12&11^210#9*98@
+__i|12|__iter__!23&19^143#9*162@__iter__!24&13^166#9*114@__iter__!21&9^636#9*82@__init__!12&11^28#9*98@__init__!24&13^17#9*114@__init__!21&9^17#9*82@__init__!25&17^16#9*146@__init__!25&15^15#9*130@__init__!22&5^15#9*50@__init__!6&5^106#9*50@__iter__!25&17^117#9*146@__init__!23&19^17#9*162@
+__l|7|__lt__!12&11^98#9*98@__len__!6&5^140#9*50@__len__!25&17^53#9*146@__lt__!22&5^73#9*50@__len__!21&9^46#9*82@__len__!24&13^42#9*114@__le__!12&11^114#9*98@
+__s|3|__str__!12&11^60#9*98@__str__!22&5^47#9*50@__setitem__!21&9^60#9*82@
+_co|1|_count!26&15^33#9*131@
+_fi|3|_first!27&13^28#9*115@_first!28&13^72#13*115@_first!29&13^157#13*115@
+_fr|1|_front!26&15^31#9*131@
+_is|1|_is_valid_index!21&9^97#9*82@
+_li|1|_linear_search!21&9^115#9*82@
+_ma|1|_max_size!26&15^29#9*131@
+_no|1|_nodes!30&5^120#9*51@
+_re|1|_rear!26&15^32#9*131@
+_se|1|_set_first!24&13^143#9*114@
+_sw|1|_swap!21&9^143#9*82@
+_va|5|_values!31&9^27#9*83@_values!27&13^27#9*115@_values!26&15^30#9*131@_values!26&17^26#9*147@_values!32&19^27#9*163@
+app|2|append!21&9^166#9*82@apply!21&9^182#9*82@
+cle|1|clean!21&9^199#9*82@
+com|2|combine!23&19^107#9*162@combine!21&9^214#9*82@
+cop|1|copy!21&9^234#9*82@
+cou|1|count!21&9^248#9*82@
+dir|1|director!33&11^56#9*99@
+dis|1|distance!34&5^31#9*51@
+edg|1|edges_by_node!6&5^164#9*50@
+end|1|end!34&5^30#9*51@
+fin|1|find!21&9^267#9*82@
+fir|1|FIRST_YEAR!12&11^21#5*99@
+gen|5|GENRE_CODES!12&11^26#5*99@GENRES!12&11^24#5*99@genres_list_string!12&11^154#9*98@genres_string!12&11^130#9*98@genres!33&11^58#9*99@
+ind|1|index!21&9^287#9*82@
+ins|4|insert!21&9^303#9*82@insert!24&13^54#9*114@insert!25&17^65#9*146@insert!25&15^35#9*130@
+int|1|intersection!21&9^331#9*82@
+is_|8|is_identical!21&9^362#9*82@is_empty!25&17^28#9*146@is_full!25&17^40#9*146@is_empty!23&19^29#9*162@is_empty!24&13^30#9*114@is_empty!21&9^349#9*82@is_full!25&15^57#9*130@is_empty!25&15^54#9*130@
+key|1|key!12&11^197#9*98@
+le|1|le!22&5^88#9*50@
+len|1|length!25&15^60#9*130@
+max|2|max!21&9^381#9*82@MAX_RATING!12&11^20#5*99@
+min|2|min!21&9^400#9*82@MIN_RATING!12&11^19#5*99@
+nod|1|node_names!6&5^152#9*50@
+pee|5|peek!23&19^77#9*162@peek!25&17^100#9*146@peek!25&15^51#9*130@peek!21&9^419#9*82@peek!24&13^77#9*114@
+pop|2|pop!21&9^435#9*82@pop!23&19^58#9*162@
+pre|1|prepend!21&9^463#9*82@
+pus|1|push!23&19^43#9*162@
+rat|1|rating!33&11^57#9*99@
+rem|6|remove_front!21&9^501#9*82@remove!24&13^94#9*114@remove_many!21&9^517#9*82@remove!25&17^82#9*146@remove!21&9^479#9*82@remove!25&15^48#9*130@
+rev|3|reverse!22&5^34#9*50@reverse!21&9^533#9*82@reverse!23&19^94#9*162@
+spl|5|split!21&9^548#9*82@split_alt!21&9^564#9*82@split_apply!21&9^581#9*82@split_key!24&13^115#9*114@split_key!21&9^602#9*82@
+sta|1|start!34&5^29#9*51@
+tit|1|title!33&11^54#9*99@
+uni|1|union!21&9^618#9*82@
+wri|1|write!12&11^177#9*98@
+yea|1|year!33&11^55#9*99@
 -- END TREE
