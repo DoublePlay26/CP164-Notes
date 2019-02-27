@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="375" key="DIALOG_X_ORIGIN"/>
-		<item value="75" key="DIALOG_Y_ORIGIN"/>
+		<item value="1" key="DIALOG_X_ORIGIN"/>
+		<item value="76" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
+		<item value="true" key="actionSetFilter"/>
+		<item value="true" key="uncategorizedFilter"/>
+		<item value="true" key="internalFilter"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="-1" key="dialogHeight"/>
@@ -32,6 +37,7 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\USER 1\Documents\Laurier\CP164\lab_archives\mill6100_lab06.zip"/>
 			<item value="C:\Users\USER 1\Documents\Laurier\CP164\lab_archives\mill6100_lab04.zip"/>
 			<item value="C:\Users\USER 1\Documents\Laurier\CP164\lab_archives\mill6100_lab03.zip"/>
 			<item value="C:\Users\USER 1\Documents\Laurier\CP164\assignment_archives\mill6100_a02.zip"/>

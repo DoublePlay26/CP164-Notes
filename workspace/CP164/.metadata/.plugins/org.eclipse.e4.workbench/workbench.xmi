@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_0v-24C6GEem6IpywFDjPxA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_0v-24S6GEem6IpywFDjPxA" bindingContexts="_0wBTvS6GEem6IpywFDjPxA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t05.py&quot; tooltip=&quot;mill6100_lab05/src/t05.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/t05.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t06.py&quot; tooltip=&quot;mill6100_lab05/src/t06.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/t06.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t04.py&quot; tooltip=&quot;mill6100_lab05/src/t04.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/t04.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;functions.py&quot; tooltip=&quot;mill6100_lab05/src/functions.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/functions.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t02.py&quot; tooltip=&quot;mill6100_lab05/src/t02.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/t02.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t01.py&quot; tooltip=&quot;mill6100_lab05/src/t01.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/t01.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t03.py&quot; tooltip=&quot;mill6100_lab05/src/t03.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/t03.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t04.py&quot; tooltip=&quot;mill6100_a04/src/t04.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_a04/src/t04.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Graph.py&quot; tooltip=&quot;mill6100_data_structures/src/Graph.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_data_structures/src/Graph.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t06.py&quot; tooltip=&quot;mill6100_a04/src/t06.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_a04/src/t06.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;functions.py&quot; tooltip=&quot;mill6100_a04/src/functions.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_a04/src/functions.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t03.py&quot; tooltip=&quot;mill6100_a04/src/t03.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_a04/src/t03.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Priority_Queue_array.py&quot; tooltip=&quot;mill6100_data_structures/src/Priority_Queue_array.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_data_structures/src/Priority_Queue_array.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;List_array.py&quot; tooltip=&quot;mill6100_data_structures/src/List_array.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_data_structures/src/List_array.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t01.py&quot; tooltip=&quot;mill6100_lab04/src/t01.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab04/src/t01.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Movie.py&quot; tooltip=&quot;mill6100_data_structures/src/Movie.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_data_structures/src/Movie.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Stack_array.py&quot; tooltip=&quot;mill6100_data_structures/src/Stack_array.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_data_structures/src/Stack_array.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;functions.py&quot; tooltip=&quot;mill6100_a03/src/functions.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_a03/src/functions.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t01.py&quot; tooltip=&quot;mill6100_lab03/src/t01.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab03/src/t01.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t07.py&quot; tooltip=&quot;mill6100_lab03/src/t07.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab03/src/t07.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
-  <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;List_linked.py&quot; tooltip=&quot;mill6100_data_structures/src/List_linked.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_data_structures/src/List_linked.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;List_array.py&quot; tooltip=&quot;mill6100_data_structures/src/List_array.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_data_structures/src/List_array.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;q05.py&quot; tooltip=&quot;mill6100_lab06/src/q05.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab06/src/q05.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Queue_array.py&quot; tooltip=&quot;mill6100_data_structures/src/Queue_array.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_data_structures/src/Queue_array.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;q01.py&quot; tooltip=&quot;mill6100_lab06/src/q01.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab06/src/q01.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Stack_linked.py&quot; tooltip=&quot;mill6100_data_structures/src/Stack_linked.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_data_structures/src/Stack_linked.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Stack_array.py&quot; tooltip=&quot;mill6100_midtermpractice/src/Stack_array.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_midtermpractice/src/Stack_array.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Queue_array.py&quot; tooltip=&quot;mill6100_midtermpractice/src/Queue_array.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_midtermpractice/src/Queue_array.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Stack_array.py&quot; tooltip=&quot;mill6100_data_structures/src/Stack_array.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_data_structures/src/Stack_array.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Stack_testing.py&quot; tooltip=&quot;mill6100_midtermpractice/src/Stack_testing.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_midtermpractice/src/Stack_testing.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Priority_Queue_array.py&quot; tooltip=&quot;mill6100_data_structures/src/Priority_Queue_array.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_data_structures/src/Priority_Queue_array.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t06.py&quot; tooltip=&quot;mill6100_midtermpractice/src/t06.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_midtermpractice/src/t06.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Set.py&quot; tooltip=&quot;mill6100_midtermpractice/src/Set.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_midtermpractice/src/Set.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t05.py&quot; tooltip=&quot;mill6100_a03/src/t05.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_a03/src/t05.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;functions.py&quot; tooltip=&quot;mill6100_a03/src/functions.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_a03/src/functions.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t05.py&quot; tooltip=&quot;mill6100_lab05/src/t05.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/t05.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t06.py&quot; tooltip=&quot;mill6100_lab05/src/t06.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/t06.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t04.py&quot; tooltip=&quot;mill6100_lab05/src/t04.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/t04.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;functions.py&quot; tooltip=&quot;mill6100_lab05/src/functions.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/functions.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t02.py&quot; tooltip=&quot;mill6100_lab05/src/t02.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mill6100_lab05/src/t02.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>ModelMigrationProcessor.001</tags>
+  <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_0v-24S6GEem6IpywFDjPxA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_0v-24i6GEem6IpywFDjPxA" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
@@ -201,10 +201,8 @@
           <tags>persp.showIn:org.python.pydev.navigator.view</tags>
           <tags>persp.showIn:org.eclipse.ui.views.ContentOutline</tags>
           <tags>persp.actionSet:org.eclipse.debug.ui.debugActionSet</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_0v_eDy6GEem6IpywFDjPxA" selectedElement="_0v_eEC6GEem6IpywFDjPxA" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_0v_eDy6GEem6IpywFDjPxA" selectedElement="_0v_eEi6GEem6IpywFDjPxA" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_0v_eEC6GEem6IpywFDjPxA" elementId="topLeft" containerData="2600" selectedElement="_0v_eES6GEem6IpywFDjPxA">
-              <tags>active</tags>
-              <tags>noFocus</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_0v_eES6GEem6IpywFDjPxA" elementId="org.python.pydev.navigator.view" ref="_0wAFPC6GEem6IpywFDjPxA" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:PyDev</tags>
@@ -422,165 +420,16 @@
       <tags>View</tags>
       <tags>categoryTag:Help</tags>
     </sharedElements>
-    <sharedElements xsi:type="advanced:Area" xmi:id="_0v_fdy6GEem6IpywFDjPxA" elementId="org.eclipse.ui.editorss" selectedElement="_0v_feC6GEem6IpywFDjPxA">
-      <children xsi:type="basic:PartSashContainer" xmi:id="_0v_feC6GEem6IpywFDjPxA" selectedElement="_0v_feS6GEem6IpywFDjPxA" horizontal="true">
-        <children xsi:type="basic:PartStack" xmi:id="_0v_feS6GEem6IpywFDjPxA" elementId="PartStack@53df324b" containerData="5000" selectedElement="_0v_fei6GEem6IpywFDjPxA">
-          <children xsi:type="basic:Part" xmi:id="_0v_fei6GEem6IpywFDjPxA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="functions" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;functions.py&quot; partName=&quot;functions&quot; title=&quot;functions&quot; tooltip=&quot;mill6100_lab05/src/functions.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mill6100_lab05/src/functions.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3299&quot; selectionTopPixel=&quot;1904&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>org.python.pydev.editor.PythonEditor</tags>
-            <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_fey6GEem6IpywFDjPxA" elementId="#PyEditContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_flS6GEem6IpywFDjPxA" elementId="#PyEditRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditRulerContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_fli6GEem6IpywFDjPxA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-          </children>
-        </children>
-        <children xsi:type="basic:PartStack" xmi:id="_0v_fly6GEem6IpywFDjPxA" elementId="PartStack@30aefa50" containerData="5000" selectedElement="_0wAFBC6GEem6IpywFDjPxA">
-          <children xsi:type="basic:Part" xmi:id="_0v_fmC6GEem6IpywFDjPxA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="t01" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t01.py&quot; partName=&quot;t01&quot; title=&quot;t01&quot; tooltip=&quot;mill6100_lab05/src/t01.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mill6100_lab05/src/t01.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;560&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>org.python.pydev.editor.PythonEditor</tags>
-            <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_fmS6GEem6IpywFDjPxA" elementId="#PyEditContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_fmi6GEem6IpywFDjPxA" elementId="#PyEditRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditRulerContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_fmy6GEem6IpywFDjPxA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_0v_fnC6GEem6IpywFDjPxA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="t02" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t02.py&quot; partName=&quot;t02&quot; title=&quot;t02&quot; tooltip=&quot;mill6100_lab05/src/t02.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mill6100_lab05/src/t02.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;527&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>org.python.pydev.editor.PythonEditor</tags>
-            <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_fnS6GEem6IpywFDjPxA" elementId="#PyEditContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_fni6GEem6IpywFDjPxA" elementId="#PyEditRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditRulerContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_fny6GEem6IpywFDjPxA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_0v_foC6GEem6IpywFDjPxA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="t03" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t03.py&quot; partName=&quot;t03&quot; title=&quot;t03&quot; tooltip=&quot;mill6100_lab05/src/t03.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mill6100_lab05/src/t03.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;484&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>org.python.pydev.editor.PythonEditor</tags>
-            <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_foS6GEem6IpywFDjPxA" elementId="#PyEditContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_foi6GEem6IpywFDjPxA" elementId="#PyEditRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditRulerContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0v_foy6GEem6IpywFDjPxA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_0wAFAC6GEem6IpywFDjPxA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="t04" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t04.py&quot; partName=&quot;t04&quot; title=&quot;t04&quot; tooltip=&quot;mill6100_lab05/src/t04.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mill6100_lab05/src/t04.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;287&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>org.python.pydev.editor.PythonEditor</tags>
-            <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0wAFAS6GEem6IpywFDjPxA" elementId="#PyEditContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0wAFAi6GEem6IpywFDjPxA" elementId="#PyEditRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditRulerContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0wAFAy6GEem6IpywFDjPxA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_0wAFBC6GEem6IpywFDjPxA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="t05" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t05.py&quot; partName=&quot;t05&quot; title=&quot;t05&quot; tooltip=&quot;mill6100_lab05/src/t05.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mill6100_lab05/src/t05.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;521&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>org.python.pydev.editor.PythonEditor</tags>
-            <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0wAFBS6GEem6IpywFDjPxA" elementId="#PyEditContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0wAFBi6GEem6IpywFDjPxA" elementId="#PyEditRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditRulerContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0wAFBy6GEem6IpywFDjPxA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_0wAFCC6GEem6IpywFDjPxA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="t06" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;t06.py&quot; partName=&quot;t06&quot; title=&quot;t06&quot; tooltip=&quot;mill6100_lab05/src/t06.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mill6100_lab05/src/t06.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;252&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>org.python.pydev.editor.PythonEditor</tags>
-            <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0wAFCS6GEem6IpywFDjPxA" elementId="#PyEditContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0wAFCi6GEem6IpywFDjPxA" elementId="#PyEditRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#PyEditRulerContext</tags>
-              <tags>popup:org.python.pydev.editor.PythonEditor.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_0wAFCy6GEem6IpywFDjPxA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-          </children>
+    <sharedElements xsi:type="advanced:Area" xmi:id="_0v_fdy6GEem6IpywFDjPxA" elementId="org.eclipse.ui.editorss" selectedElement="_0v_fly6GEem6IpywFDjPxA">
+      <children xsi:type="basic:PartStack" xmi:id="_0v_fly6GEem6IpywFDjPxA" elementId="PartStack@30aefa50" selectedElement="_Ar3TADlcEemhMI555QcWDA">
+        <tags>active</tags>
+        <children xsi:type="basic:Part" xmi:id="_Ar3TADlcEemhMI555QcWDA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="List_linked" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;List_linked.py&quot; partName=&quot;List_linked&quot; title=&quot;List_linked&quot; tooltip=&quot;mill6100_data_structures/src/List_linked.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mill6100_data_structures/src/List_linked.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;6916&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.python.pydev.editor.PythonEditor</tags>
+          <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -736,10 +585,9 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_0wAFPC6GEem6IpywFDjPxA" elementId="org.python.pydev.navigator.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="PyDev Package Explorer" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/pydev_package_explorer.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.python.pydev.navigator.ui.PydevPackageExplorer"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.python.pydev"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1546993127874&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;C:/Users/USER 1/Documents/Laurier/CP164/workspace/CP164/mill6100_a04&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;C:/Users/USER 1/Documents/Laurier/CP164/workspace/CP164/mill6100_data_structures&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;C:/Users/USER 1/Documents/Laurier/CP164/workspace/CP164/mill6100_data_structures/src&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;C:/Users/USER 1/Documents/Laurier/CP164/workspace/CP164/mill6100_lab05&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;C:/Users/USER 1/Documents/Laurier/CP164/workspace/CP164/mill6100_lab05/src&quot;/>&#xD;&#xA;&lt;selected IMemento.internal.id=&quot;C:/Users/USER 1/Documents/Laurier/CP164/workspace/CP164/mill6100_lab05&quot;/>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1546993127874&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;C:/Users/USER 1/Documents/Laurier/CP164/workspace/CP164/mill6100_data_structures&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;C:/Users/USER 1/Documents/Laurier/CP164/workspace/CP164/mill6100_data_structures/src&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;C:/Users/USER 1/Documents/Laurier/CP164/workspace/CP164/mill6100_lab06&quot;/>&#xD;&#xA;&lt;selected IMemento.internal.id=&quot;C:/Users/USER 1/Documents/Laurier/CP164/workspace/CP164/mill6100_data_structures/src/List_linked.py&quot;/>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:PyDev</tags>
-      <tags>active</tags>
       <menus xmi:id="_0wAFPS6GEem6IpywFDjPxA" elementId="org.python.pydev.navigator.view">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -870,40 +718,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAF2i6GEem6IpywFDjPxA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF2y6GEem6IpywFDjPxA" elementId="new.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF3C6GEem6IpywFDjPxA" elementId="newWizardDropDown">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF3S6GEem6IpywFDjPxA" elementId="new.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF3i6GEem6IpywFDjPxA" elementId="save.group" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF3y6GEem6IpywFDjPxA" elementId="save">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF4C6GEem6IpywFDjPxA" elementId="saveAll">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF4S6GEem6IpywFDjPxA" elementId="save.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_0wAF4i6GEem6IpywFDjPxA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_0wGMfC6GEem6IpywFDjPxA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF4y6GEem6IpywFDjPxA" elementId="print.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF5C6GEem6IpywFDjPxA" elementId="build.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF5S6GEem6IpywFDjPxA" elementId="build.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF5i6GEem6IpywFDjPxA" elementId="additions">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_t-MS8DlbEemhMI555QcWDA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_0wGMfC6GEem6IpywFDjPxA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAF5y6GEem6IpywFDjPxA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -911,15 +726,6 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAF6S6GEem6IpywFDjPxA" elementId="org.eclipse.ui.workbench.edit" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF6i6GEem6IpywFDjPxA" elementId="edit.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF6y6GEem6IpywFDjPxA" elementId="undo">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF7C6GEem6IpywFDjPxA" elementId="redo">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAF7S6GEem6IpywFDjPxA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -927,18 +733,6 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAF7y6GEem6IpywFDjPxA" elementId="com.python.pydev.debug.actionSet" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF8C6GEem6IpywFDjPxA" elementId="pyDebugGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF8S6GEem6IpywFDjPxA" elementId="com.python.pydev.debug.actions.AttachToProcess">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF8i6GEem6IpywFDjPxA" elementId="com.python.pydev.debug.actions.EndDebugServer">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAF8y6GEem6IpywFDjPxA" elementId="com.python.pydev.debug.actions.StartDebugServer">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAsGy6GEem6IpywFDjPxA" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
         <tags>Draggable</tags>
@@ -961,48 +755,15 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAsJC6GEem6IpywFDjPxA" elementId="com.python.pydev.navigate.actionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsJS6GEem6IpywFDjPxA" elementId="pyNavigateGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsJi6GEem6IpywFDjPxA" elementId="com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAsJy6GEem6IpywFDjPxA" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsKC6GEem6IpywFDjPxA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsKS6GEem6IpywFDjPxA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsKi6GEem6IpywFDjPxA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsKy6GEem6IpywFDjPxA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsLC6GEem6IpywFDjPxA" elementId="org.eclipse.eclemma.ui.actions.CoverageDropDownAction">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAsLS6GEem6IpywFDjPxA" elementId="org.eclipse.jdt.ui.JavaElementCreationActionSet" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAsLi6GEem6IpywFDjPxA" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsLy6GEem6IpywFDjPxA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsMC6GEem6IpywFDjPxA" elementId="org.eclipse.mylyn.tasks.ui.openTask">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsMS6GEem6IpywFDjPxA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsMi6GEem6IpywFDjPxA" elementId="openType">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAsMy6GEem6IpywFDjPxA" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1010,34 +771,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAsNS6GEem6IpywFDjPxA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsNi6GEem6IpywFDjPxA" elementId="history.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsNy6GEem6IpywFDjPxA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsOC6GEem6IpywFDjPxA" elementId="backardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsOS6GEem6IpywFDjPxA" elementId="forwardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsOi6GEem6IpywFDjPxA" elementId="pin.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_0wAsOy6GEem6IpywFDjPxA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_0wGMLi6GEem6IpywFDjPxA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsPC6GEem6IpywFDjPxA" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsPS6GEem6IpywFDjPxA" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsPi6GEem6IpywFDjPxA" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition">
-          <tags>Opaque</tags>
-        </children>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_0wAsPy6GEem6IpywFDjPxA" elementId="org.python.pydev.editor.PythonEditor" visible="false">
-        <tags>Draggable</tags>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_t-a8cDlbEemhMI555QcWDA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_0wGMLi6GEem6IpywFDjPxA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAsQC6GEem6IpywFDjPxA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1049,12 +783,6 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0wAsRC6GEem6IpywFDjPxA" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsRS6GEem6IpywFDjPxA" elementId="group.help">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_0wAsRi6GEem6IpywFDjPxA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_0wAsRy6GEem6IpywFDjPxA" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>
@@ -1159,7 +887,6 @@
     <bindings xmi:id="_0wAsni6GEem6IpywFDjPxA" keySequence="CTRL+SHIFT+DEL" command="_0wGMVC6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAsny6GEem6IpywFDjPxA" keySequence="CTRL+END" command="_0wGMDS6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAsoC6GEem6IpywFDjPxA" keySequence="CTRL+SHIFT+NUMPAD_MULTIPLY" command="_0wGMJS6GEem6IpywFDjPxA"/>
-    <bindings xmi:id="_0wAsoS6GEem6IpywFDjPxA" keySequence="CTRL+SHIFT+NUMPAD_DIVIDE" command="_0wGLty6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAsoi6GEem6IpywFDjPxA" keySequence="CTRL+ARROW_UP" command="_0wE-dS6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAsoy6GEem6IpywFDjPxA" keySequence="CTRL+ARROW_DOWN" command="_0wGNLS6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAspC6GEem6IpywFDjPxA" keySequence="CTRL+ARROW_LEFT" command="_0wFkwC6GEem6IpywFDjPxA"/>
@@ -1175,6 +902,9 @@
     <bindings xmi:id="_0wAsri6GEem6IpywFDjPxA" keySequence="ALT+CTRL+ARROW_UP" command="_0wGM8i6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAsry6GEem6IpywFDjPxA" keySequence="ALT+CTRL+ARROW_DOWN" command="_0wE_US6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAssC6GEem6IpywFDjPxA" keySequence="CTRL+F10" command="_0wGMgC6GEem6IpywFDjPxA"/>
+    <bindings xmi:id="_bh3QoDlSEemry7Oo_v725g" keySequence="CTRL+SHIFT+\" command="_0wGLty6GEem6IpywFDjPxA">
+      <tags>type:user</tags>
+    </bindings>
   </bindingTables>
   <bindingTables xmi:id="_0wAssS6GEem6IpywFDjPxA" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" bindingContext="_0wBT4i6GEem6IpywFDjPxA">
     <bindings xmi:id="_0wAssi6GEem6IpywFDjPxA" keySequence="INSERT" command="_0wE_KC6GEem6IpywFDjPxA"/>
@@ -1312,7 +1042,6 @@
     <bindings xmi:id="_0wAtKy6GEem6IpywFDjPxA" keySequence="CTRL+SHIFT+NUMPAD_MULTIPLY" command="_0wGL0S6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAtLC6GEem6IpywFDjPxA" keySequence="CTRL+F4" command="_0wFkmS6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAtLS6GEem6IpywFDjPxA" keySequence="CTRL+F6" command="_0wE-Zi6GEem6IpywFDjPxA"/>
-    <bindings xmi:id="_0wAtLi6GEem6IpywFDjPxA" keySequence="CTRL+SHIFT+NUMPAD_DIVIDE" command="_0wE-4C6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAtLy6GEem6IpywFDjPxA" keySequence="CTRL+SHIFT+F7" command="_0wGM1i6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAtMC6GEem6IpywFDjPxA" keySequence="CTRL+SHIFT+F8" command="_0wE-3S6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAtMS6GEem6IpywFDjPxA" keySequence="CTRL+SHIFT+F9" command="_0wE_Qi6GEem6IpywFDjPxA"/>
@@ -1351,6 +1080,9 @@
     <bindings xmi:id="_0wAtSi6GEem6IpywFDjPxA" keySequence="CTRL+F9" command="_0wE-hS6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAtSy6GEem6IpywFDjPxA" keySequence="CTRL+F11" command="_0wGMoy6GEem6IpywFDjPxA"/>
     <bindings xmi:id="_0wAtTC6GEem6IpywFDjPxA" keySequence="CTRL+F12" command="_0wE-dC6GEem6IpywFDjPxA"/>
+    <bindings xmi:id="_T20QgDlSEemry7Oo_v725g" keySequence="CTRL+SHIFT+\" command="_0wE-4C6GEem6IpywFDjPxA">
+      <tags>type:user</tags>
+    </bindings>
   </bindingTables>
   <bindingTables xmi:id="_0wAtTS6GEem6IpywFDjPxA" elementId="org.python.pydev.ui.editor.scope" bindingContext="_0wBTwi6GEem6IpywFDjPxA">
     <bindings xmi:id="_0wAtTi6GEem6IpywFDjPxA" keySequence="F2" command="_0wE96i6GEem6IpywFDjPxA"/>
@@ -2100,6 +1832,26 @@
     <tags>View</tags>
     <tags>categoryTag:PyDev</tags>
   </descriptors>
+  <trimContributions xmi:id="_VJSd4NrlEeWx1NC92N4qRw" elementId="org.eclipse.recommenders.news.rcp.trimConstribution.news" contributorURI="platform:/plugin/org.eclipse.recommenders.news.rcp" parentId="org.eclipse.ui.trim.status">
+    <children xsi:type="menu:ToolControl" xmi:id="_ckfB0OFAEeWdb5xZgv0Dbw" elementId="org.eclipse.recommenders.news.rcp.toolControl.news" contributorURI="platform:/plugin/org.eclipse.recommenders.news.rcp" contributionURI="bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl"/>
+  </trimContributions>
+  <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
+    <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:PerspectiveSpacer</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_8tJPcF9tEeO-yojH_y4TJA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
+      <tags>move_after:Spacer Glue</tags>
+      <tags>HIDEABLE</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_9LgmcF9tEeO-yojH_y4TJA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:SearchField</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+  </trimContributions>
   <commands xmi:id="_0wE92y6GEem6IpywFDjPxA" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform" commandName="Customize Perspective" description="Customize the current perspective"/>
   <commands xmi:id="_0wE93C6GEem6IpywFDjPxA" elementId="org.eclipse.jdt.ui.correction.inlineLocal.assist" commandName="Quick Assist - Inline local variable" description="Invokes quick assist and selects 'Inline local variable'" category="_0wGN2S6GEem6IpywFDjPxA"/>
   <commands xmi:id="_0wE93S6GEem6IpywFDjPxA" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Select Page Up" description="Select to the top of the page" category="_0wGNwC6GEem6IpywFDjPxA"/>

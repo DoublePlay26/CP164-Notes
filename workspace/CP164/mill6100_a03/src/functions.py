@@ -9,7 +9,6 @@ __updated__ = 2019-01-27
 ------------------------------------------------------------------------
 """
 from Stack_array import Stack
-from _ast import operator
 
 def stack_reverse(source):
     """
@@ -121,7 +120,7 @@ def has_balanced_brackets(string):
                 if not char == complimentary_bracket:
                     balanced = MISMATCHED
         char_index += 1
-    if len(s) > 0:  # If we still have opening brackets in the stack but we reach the end of the string
+    if not s.is_empty():  # If we still have opening brackets in the stack but we reach the end of the string
         balanced = MORE_LEFT
         
     return balanced
@@ -195,7 +194,7 @@ def is_palindrome_stack(string):
         
         if char in CHARACTERS:
             if char_index < mid:   # First half of string
-                
+                pass
         
         char_index += 1
     

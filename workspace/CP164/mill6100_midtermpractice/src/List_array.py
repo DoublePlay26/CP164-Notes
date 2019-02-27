@@ -41,7 +41,8 @@ class List:
         assert self._is_valid_index(i), 'Invalid index value'
 
         # Your code here
-        return deepcopy(self._values[i])
+
+        return
 
     def __len__(self):
         """
@@ -74,7 +75,7 @@ class List:
         assert self._is_valid_index(i), 'Invalid index value'
 
         # Your code here
-        self._values[i] = deepcopy(value)
+
         return
 
     def __contains__(self, key):
@@ -91,7 +92,7 @@ class List:
         """
 
         # Your code here
-        i = self._linear_search(key)
+
         return i > -1
 
     def _is_valid_index(self, i):
@@ -109,8 +110,8 @@ class List:
         -------------------------------------------------------
         """
         # Your code here
-        
-        return -len(self._values) <= i <= len(self._values) - 1
+
+        return
 
     def _linear_search(self, key):
         """
@@ -126,19 +127,8 @@ class List:
         -------------------------------------------------------
         """
         # Your code here
-        i = -1
-        
-        n = 0
-        while n != -1:
-            if n < len(self._values):
-                if key == self._values[n]:
-                    i = n
-                    n = -2
-            elif n == len(self._values):
-                i = -1
-                n = -2
-            n += 1
-        return i
+
+        return
 
     def _swap(self, i, j):
         """
@@ -160,9 +150,7 @@ class List:
         assert self._is_valid_index(j), 'Invalid index j'
 
         # Your code here
-        temp = self._values[i]
-        self._values[i] = self._values[j]
-        self._values[j] = temp
+
         return
 
     def append(self, value):
@@ -178,7 +166,7 @@ class List:
         -------------------------------------------------------
         """
         # Your code here
-        self._values.append(deepcopy(value))
+
         return
 
     def apply(self, func):
@@ -260,11 +248,8 @@ class List:
         -------------------------------------------------------
         """
         # Your code here
-        count = 0
-        for elem in self._values:
-            if key == elem:
-                count += 1
-        return count
+
+        return
 
     def find(self, key):
         """
@@ -279,12 +264,8 @@ class List:
         -------------------------------------------------------
         """
         # Your code here
-        #value = None if self._linear_search(key) == -1 else self._values[self._linear_search(key)]
-        value = None
-        index = self._linear_search(key)
-        if not index == -1:
-            value = self._values[index]
-        return deepcopy(value)
+
+        return
 
     def index(self, key):
         """
@@ -300,7 +281,8 @@ class List:
         -------------------------------------------------------
         """
         # Your code here
-        return self._linear_search(key)
+
+        return
 
     def insert(self, i, value):
         """
@@ -318,16 +300,7 @@ class List:
         -------------------------------------------------------
         """
         # Your code here
-        if i < (-len(self._values)):    # prepending, have to shift EVERYTHING
-            self._values.append(None)   # Add None to the end of the list, extending the len(values) by 1
-            for x in range(len(self._values) - 1, 0, -1):   # Loop over list backwards
-                temp = self._values[x - 1]  # Grab value to the left of one currently processing
-                self._values[x] = temp  # Set current value to temp value
-            self._values[0] = value # Set the beginning to the value to be prepended
-        elif i > (len(self._values) - 1):   # appending
-            self._values.append(deepcopy(value))
-        else:   # i is within range, so add it to its actual i
-            self._values.insert(i, value)
+
         return
 
     def intersection(self, source1, source2):
@@ -359,7 +332,8 @@ class List:
         -------------------------------------------------------
         """
         # Your code here
-        return len(self._values) == 0
+
+        return
 
     def is_identical(self, target):
         """
@@ -393,11 +367,8 @@ class List:
         assert (len(self._values) > 0), 'Cannot find maximum of an empty list'
 
         # Your code here
-        value = self._values[0]
-        for elem in self._values:
-            if elem > value:
-                value = elem
-        return deepcopy(value)
+
+        return
 
     def min(self):
         """
@@ -412,11 +383,8 @@ class List:
         assert (len(self._values) > 0), 'Cannot find minimum of an empty list'
 
         # Your code here
-        value = self._values[0]
-        for elem in self._values:
-            if elem < value:
-                value = elem
-        return deepcopy(value)
+
+        return
 
     def peek(self):
         """
@@ -431,8 +399,8 @@ class List:
         assert (len(self._values) > 0), 'Cannot peek at an empty list'
 
         # Your code here
-        
-        return deepcopy(self._values[0])
+
+        return
 
     def pop(self, *args):
         """
@@ -491,14 +459,8 @@ class List:
         -------------------------------------------------------
         """
         # Your code here
-        index = self._linear_search(key)
-        #value = self._values[index] if not index == -1 else None
-        if index == -1:
-            value = None
-        else:
-            value = self._values[index]
-            del self._values[index]
-        return value
+
+        return
 
     def remove_front(self):
         """

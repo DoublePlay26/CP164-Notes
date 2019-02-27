@@ -1,11 +1,14 @@
 MODULES_MANAGER_V2
 Graph|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Graph.py
 List_array|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\List_array.py
+List_linked|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\List_linked.py
 Movie|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Movie.py
 Movie_utilities|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Movie_utilities.py
 Priority_Queue_array|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Priority_Queue_array.py
 Queue_array|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Queue_array.py
 Queue_circular|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Queue_circular.py
+Sorted_List_array|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Sorted_List_array.py
 Stack_array|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Stack_array.py
+Stack_linked|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\Stack_linked.py
 mirror|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\mirror.py
 utilities|C:\Users\USER 1\Documents\Laurier\CP164\workspace\CP164\mill6100_data_structures\src\utilities.py
