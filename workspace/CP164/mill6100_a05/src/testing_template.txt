@@ -1,0 +1,147 @@
+
+-------------------------------------------------------
+Assignment 5 Testing
+-------------------------------------------------------
+Author  Nicolas Mills
+ID      180856100
+Email   mill6100@mylaurier.ca
+Version 2019-03-01
+-------------------------------------------------------
+
+-------------------------------------------------------
+Task 1
+-------------------------------------------------------
+Testing 'List#is_identical'
+
+	Test list of movies vs empty list
+List 1 Contents: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+List 2 Contents: []
+Identical? False	Expecting: False
+
+	Test list of movies vs list of movies
+List 1 Contents: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+List 2 Contents: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+Identical? True	Expecting: True
+
+	Test empty list vs empty list
+List 1 Contents: []
+List 2 Contents: []
+Identical? True	Expecting: True
+
+Testing List#remove_many
+List contents before remove: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+Key removed: Title:    Juno
+Year:     2007
+Director: Jason Reitman
+Rating:   7.7
+Genres:   romance, comedy
+List contents after remove: [<Movie.Movie object at 0x014E2D90>, <Movie.Movie object at 0x014E2E10>, <Movie.Movie object at 0x014E2E90>, <Movie.Movie object at 0x014E2F10>, <Movie.Movie object at 0x014E2F90>, <Movie.Movie object at 0x014E2FF0>, <Movie.Movie object at 0x014E2F70>, <Movie.Movie object at 0x014E2EF0>, <Movie.Movie object at 0x014E2DF0>, <Movie.Movie object at 0x014E2D70>, <Movie.Movie object at 0x014E2890>, <Movie.Movie object at 0x014E2910>, <Movie.Movie object at 0x014E2990>, <Movie.Movie object at 0x014E2A10>, <Movie.Movie object at 0x014E2A90>, <Movie.Movie object at 0x014E2B10>, <Movie.Movie object at 0x014E2B90>, <Movie.Movie object at 0x014E2C10>, <Movie.Movie object at 0x014E2C90>, <Movie.Movie object at 0x014E2D10>, <Movie.Movie object at 0x014E2CF0>, <Movie.Movie object at 0x014E2C70>, <Movie.Movie object at 0x014E2BF0>, <Movie.Movie object at 0x014E2B70>, <Movie.Movie object at 0x014E2AF0>, <Movie.Movie object at 0x014E2A70>, <Movie.Movie object at 0x014E29F0>, <Movie.Movie object at 0x014E28F0>, <Movie.Movie object at 0x014E2870>, <Movie.Movie object at 0x014EC070>, <Movie.Movie object at 0x014EC0F0>, <Movie.Movie object at 0x014EC170>, <Movie.Movie object at 0x014EC1F0>, <Movie.Movie object at 0x014EC250>, <Movie.Movie object at 0x014EC1D0>, <Movie.Movie object at 0x014EC150>, <Movie.Movie object at 0x014EC0D0>, <Movie.Movie object at 0x014EC050>]
+
+Testing List#__getitem__
+Value returned from index access: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+
+Testing List#clean
+Cleaned the list
+List contents after clean: [<Movie.Movie object at 0x014E2AB0>, <Movie.Movie object at 0x014E2DD0>, <Movie.Movie object at 0x014E2FD0>, <Movie.Movie object at 0x014E2DB0>, <Movie.Movie object at 0x014E29D0>, <Movie.Movie object at 0x014E2BD0>, <Movie.Movie object at 0x014E2CB0>, <Movie.Movie object at 0x014E29B0>, <Movie.Movie object at 0x014E2E70>, <Movie.Movie object at 0x014E2C30>, <Movie.Movie object at 0x014E2C50>, <Movie.Movie object at 0x014E2A50>, <Movie.Movie object at 0x014E2590>, <Movie.Movie object at 0x014E2FB0>, <Movie.Movie object at 0x014E2E50>, <Movie.Movie object at 0x014E2A30>, <Movie.Movie object at 0x014EC0B0>, <Movie.Movie object at 0x014EC210>, <Movie.Movie object at 0x014EC230>, <Movie.Movie object at 0x014EC030>]
+Expected: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+
+Testing List#intersection
+
+Testing List#union
+
+Testing List#prepend
+Prepended Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genres:   fantasy, action
+List contents after prepend: [<Movie.Movie object at 0x014E2A70>, <Movie.Movie object at 0x014E2ED0>, <Movie.Movie object at 0x014E28D0>, <Movie.Movie object at 0x014E2CD0>, <Movie.Movie object at 0x014E2EB0>, <Movie.Movie object at 0x014E2D30>, <Movie.Movie object at 0x014E2950>, <Movie.Movie object at 0x014E2F50>, <Movie.Movie object at 0x014E2B30>, <Movie.Movie object at 0x014E2E90>, <Movie.Movie object at 0x014E2F90>, <Movie.Movie object at 0x014E2F70>, <Movie.Movie object at 0x014E2DF0>, <Movie.Movie object at 0x014E2890>, <Movie.Movie object at 0x014E2990>, <Movie.Movie object at 0x014E2A90>, <Movie.Movie object at 0x014E2B90>, <Movie.Movie object at 0x014E2C90>, <Movie.Movie object at 0x014E2CF0>, <Movie.Movie object at 0x014E2BF0>, <Movie.Movie object at 0x014E2AF0>]
+Expected: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genres:   fantasy, action
+
+Testing List#append
+Appended 5
+List contents after append: [<Movie.Movie object at 0x014E2930>, <Movie.Movie object at 0x014E2AD0>, <Movie.Movie object at 0x014E27F0>, <Movie.Movie object at 0x014E2E30>, <Movie.Movie object at 0x014E2D90>, <Movie.Movie object at 0x014E2FF0>, <Movie.Movie object at 0x014E2D70>, <Movie.Movie object at 0x014E2A10>, <Movie.Movie object at 0x014E2C10>, <Movie.Movie object at 0x014E2C70>, <Movie.Movie object at 0x014E2AB0>, <Movie.Movie object at 0x014E2DB0>, <Movie.Movie object at 0x014E2BD0>, <Movie.Movie object at 0x014E29B0>, <Movie.Movie object at 0x014E2C30>, <Movie.Movie object at 0x014E2A50>, <Movie.Movie object at 0x014E2FB0>, <Movie.Movie object at 0x014E2A30>, <Movie.Movie object at 0x014E29F0>, <Movie.Movie object at 0x014E2970>, <Movie.Movie object at 0x014EC0B0>]
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror[<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+
+Testing List#remove_front
+Original values: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+Removed the front node of the list
+List contents after remove: [<Movie.Movie object at 0x014E2B50>, <Movie.Movie object at 0x014E2F10>, <Movie.Movie object at 0x014E2910>, <Movie.Movie object at 0x014E2D10>, <Movie.Movie object at 0x014E2FD0>, <Movie.Movie object at 0x014E2CB0>, <Movie.Movie object at 0x014E2C50>, <Movie.Movie object at 0x014E2E50>, <Movie.Movie object at 0x014E2870>, <Movie.Movie object at 0x014E2A70>, <Movie.Movie object at 0x014E2CD0>, <Movie.Movie object at 0x014E2D30>, <Movie.Movie object at 0x014E2F50>, <Movie.Movie object at 0x014E2E90>, <Movie.Movie object at 0x014E2F70>, <Movie.Movie object at 0x014E2890>, <Movie.Movie object at 0x014E2A90>, <Movie.Movie object at 0x014E2C90>, <Movie.Movie object at 0x014E2BF0>]
+Expected list contents: [<Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+Value returned after removing front: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Expected value: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+
+Testing List#combine
+Empty initial List:
+List 1: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>]
+List 2: [<Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+Combined the two lists into combined.
+Contents of combined: [<Movie.Movie object at 0x014EC050>, <Movie.Movie object at 0x014E27F0>, <Movie.Movie object at 0x014E2B70>, <Movie.Movie object at 0x014E2D90>, <Movie.Movie object at 0x014E2E70>, <Movie.Movie object at 0x014E2D70>, <Movie.Movie object at 0x014E28F0>, <Movie.Movie object at 0x014E2C10>, <Movie.Movie object at 0x014E28D0>, <Movie.Movie object at 0x014E2AB0>, <Movie.Movie object at 0x014E2950>, <Movie.Movie object at 0x014E2BD0>, <Movie.Movie object at 0x014E2F90>, <Movie.Movie object at 0x014E2C30>, <Movie.Movie object at 0x014E2990>, <Movie.Movie object at 0x014E2FB0>, <Movie.Movie object at 0x014E2CF0>, <Movie.Movie object at 0x014E29F0>]
+Expected: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+Contents of source1: []
+Contents of source2: []
+
+	Initial List has values already
+Initial values: [<Movie.Movie object at 0x014E2910>]
+List 1: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>]
+List 2: [<Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+Combined the two lists into combined.
+Contents of combined: [<Movie.Movie object at 0x014E2910>, <Movie.Movie object at 0x014E2CB0>, <Movie.Movie object at 0x014E28B0>, <Movie.Movie object at 0x014E2E50>, <Movie.Movie object at 0x014EC070>, <Movie.Movie object at 0x014E2A70>, <Movie.Movie object at 0x014EC0B0>, <Movie.Movie object at 0x014E2D30>, <Movie.Movie object at 0x014EC0F0>, <Movie.Movie object at 0x014E2E90>, <Movie.Movie object at 0x014EC130>, <Movie.Movie object at 0x014E2890>, <Movie.Movie object at 0x014EC170>, <Movie.Movie object at 0x014E2C90>, <Movie.Movie object at 0x014EC1B0>, <Movie.Movie object at 0x014E2F30>, <Movie.Movie object at 0x014EC1F0>, <Movie.Movie object at 0x014E2AF0>, <Movie.Movie object at 0x014EC230>]
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror[<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+Contents of source1: []
+Contents of source2: []
+
+Testing List#split
+Initial contents of List: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+Split the list
+Contents of target1: [<Movie.Movie object at 0x014EC530>, <Movie.Movie object at 0x014E2C50>, <Movie.Movie object at 0x014E2870>, <Movie.Movie object at 0x014E2F50>, <Movie.Movie object at 0x014E2A90>, <Movie.Movie object at 0x014E2970>, <Movie.Movie object at 0x014EC0D0>, <Movie.Movie object at 0x014EC150>, <Movie.Movie object at 0x014EC1D0>, <Movie.Movie object at 0x014EC250>]
+Expected: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>]
+Contents of target2: [<Movie.Movie object at 0x014EC570>, <Movie.Movie object at 0x014EC2D0>, <Movie.Movie object at 0x014EC310>, <Movie.Movie object at 0x014EC350>, <Movie.Movie object at 0x014EC390>, <Movie.Movie object at 0x014EC3D0>, <Movie.Movie object at 0x014EC410>, <Movie.Movie object at 0x014EC450>, <Movie.Movie object at 0x014EC490>, <Movie.Movie object at 0x014EC4D0>]
+Expected: [<Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+Contents of original List: []
+
+Testing List#split_alt
+Initial contents of List: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E27D0>, <Movie.Movie object at 0x014E2810>, <Movie.Movie object at 0x014E2850>]
+Split alt the list
+Contents of target1: [<Movie.Movie object at 0x014EC830>, <Movie.Movie object at 0x014E2890>, <Movie.Movie object at 0x014E2ED0>, <Movie.Movie object at 0x014EC0F0>, <Movie.Movie object at 0x014EC1F0>, <Movie.Movie object at 0x014EC590>, <Movie.Movie object at 0x014EC610>, <Movie.Movie object at 0x014EC690>, <Movie.Movie object at 0x014EC710>, <Movie.Movie object at 0x014EC790>]
+Expected: [<Movie.Movie object at 0x014E2550>, <Movie.Movie object at 0x014E25B0>, <Movie.Movie object at 0x014E2630>, <Movie.Movie object at 0x014E2670>, <Movie.Movie object at 0x014E26D0>, <Movie.Movie object at 0x014E2710>, <Movie.Movie object at 0x014E26B0>, <Movie.Movie object at 0x014E26F0>, <Movie.Movie object at 0x014E27B0>, <Movie.Movie object at 0x014E2810>]
+Contents of target2: [<Movie.Movie object at 0x014EC870>, <Movie.Movie object at 0x014E2F30>, <Movie.Movie object at 0x014EC070>, <Movie.Movie object at 0x014EC170>, <Movie.Movie object at 0x014EC290>, <Movie.Movie object at 0x014EC5D0>, <Movie.Movie object at 0x014EC650>, <Movie.Movie object at 0x014EC6D0>, <Movie.Movie object at 0x014EC750>, <Movie.Movie object at 0x014EC7D0>]
+Expected: [<Movie.Movie object at 0x014E2570>, <Movie.Movie object at 0x014E2610>, <Movie.Movie object at 0x014E22F0>, <Movie.Movie object at 0x014E2690>, <Movie.Movie object at 0x014E22D0>, <Movie.Movie object at 0x014E2730>, <Movie.Movie object at 0x014E2770>, <Movie.Movie object at 0x014E2790>, <Movie.Movie object at 0x014E27D0>]
+Contents of original list: []
+
+-------------------------------------------------------
+Task 2
+-------------------------------------------------------
+
+-------------------------------------------------------
+Task 3
+-------------------------------------------------------

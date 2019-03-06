@@ -40,8 +40,14 @@ class Sorted_List:
         """
 
         # Your code here
-
-        return
+        found = False
+        index = 0
+        while not found and index < len(self._values):
+            val = self._values[index]
+            if val == key:
+                found = True
+            index += 1
+        return found
 
     def __getitem__(self, i):
         """
@@ -59,7 +65,7 @@ class Sorted_List:
 
         # Your code here
 
-        return
+        return deepcopy(self._values[i])
 
     def __len__(self):
         """
@@ -124,7 +130,8 @@ class Sorted_List:
         -------------------------------------------------------
         """
         # Your code here
-
+        already_processed = []
+        index = 0
         return
 
     def combine(self, source1, source2):
@@ -176,8 +183,12 @@ class Sorted_List:
         -------------------------------------------------------
         """
         # Your code here
-
-        return
+        number = 0
+        for i in range(len(self._values)):
+            val = self._values[i]
+            if val == key:
+                number += 1
+        return number
 
     def find(self, key):
         """
@@ -192,8 +203,21 @@ class Sorted_List:
         -------------------------------------------------------
         """
         # Your code here
-
-        return
+        index = 0
+        value = None
+        found = False
+        
+        while not found and index < len(self._values):
+            value = self._values[index]
+            if value == key:
+                found = True
+            index += 1
+        if found:
+            index -= 1
+            value = deepcopy(self._values[index])
+        else:
+            value = None
+        return value
 
     def index(self, key):
         """
@@ -208,8 +232,19 @@ class Sorted_List:
         -------------------------------------------------------
         """
         # Your code here
-
-        return
+        found = False
+        i = 0
+        while not found and i < len(self._values):
+            value = self._values[i]
+            if value == key:
+                found = True
+            i += 1
+        if found:
+            # Reverse addition of one at end of loop
+            i -= 1
+        else:
+            i = -1
+        return i
 
     def insert(self, value):
         """
@@ -276,8 +311,16 @@ class Sorted_List:
         -------------------------------------------------------
         """
         # Your code here
-
-        return
+        identical = len(self._values) == len(target._values)
+        index = 0
+        
+        while identical and index < len(self._values):
+            val1 = self._values[index]
+            val2 = target._values[index]
+            if not val1 == val2:
+                identical = False
+            index += 1
+        return identical
 
     def max(self):
         """
@@ -292,8 +335,12 @@ class Sorted_List:
         assert (len(self._values) > 0), 'Cannot find maximum of an empty list'
 
         # Your code here
-
-        return
+        max_ = self._values[0]
+        for i in range(len(self._values)):
+            val = self._values[i]
+            if val > max_:
+                max_ = val
+        return deepcopy(max_)
 
     def min(self):
         """
@@ -308,8 +355,12 @@ class Sorted_List:
         assert (len(self._values) > 0), 'Cannot find minimum of an empty list'
 
         # Your code here
-
-        return
+        min_ = self._values[0]
+        for i in range(len(self._values)):
+            val = self._values[i]
+            if val < min_:
+                min_ = val
+        return deepcopy(min_)
 
     def peek(self):
         """
@@ -325,7 +376,7 @@ class Sorted_List:
 
         # Your code here
 
-        return
+        return deepcopy(self._values[0])
 
     def pop(self, *args):
         """
@@ -368,8 +419,18 @@ class Sorted_List:
         -------------------------------------------------------
         """
         # Your code here
-
-        return
+        index = 0
+        found = False
+        while not found and index < len(self._values):
+            value = self._values[index]
+            if value == key:
+                found = True
+            index += 1
+        if found:
+            value = self._values[index]
+        else:
+            value = None
+        return value
 
     def remove_front(self):
         """
@@ -384,8 +445,9 @@ class Sorted_List:
         assert (len(self._values) > 0), 'Cannot remove from an empty list'
 
         # Your code here
-
-        return
+        value = deepcopy(self._values[0])
+        del self._values[0]
+        return value
 
     def remove_many(self, key):
         """
@@ -400,7 +462,14 @@ class Sorted_List:
         ---------------------------------------------------------
         """
         # Your code here
-
+        index_to_remove = []
+        
+        for i in range(len(self._values)):
+            val = self._values[i]
+            if val == key:
+                index_to_remove.append(i)
+        for index in index_to_remove:
+            del self._values[index]
         return
 
     def split(self):
