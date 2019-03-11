@@ -181,7 +181,7 @@ class List:
         current = self._front
         index = 0
         previous = None
-        while not current is None and not current._value == key:
+        while not current is None and current._value != key:
             previous = current
             current = current._next
             index += 1
@@ -288,6 +288,9 @@ class List:
         # your code here
         value = self._front._value
         self._front = self._front._next
+        # Added after assignment marked
+        self._count -= 1
+        # END OF ADDITIONS
         return deepcopy(value)
 
     def remove_many(self, key):
@@ -585,7 +588,7 @@ class List:
     def _reverse_r_aux(self, new_front):
         """
         """
-        while self._front is not None:
+        if self._front is not None:
             temp = self._front._next
             self._front._next = new_front
             new_front = self._front
@@ -614,11 +617,10 @@ class List:
             if current._value not in already_seen:
                 already_seen.append(current._value)
                 previous = current
-                current = current._next
             else:
                 previous._next = current._next
                 self._count -= 1
-                current = current._next
+            current = current._next
         return
 
     def pop(self, *args):
@@ -785,61 +787,70 @@ class List:
         -------------------------------------------------------
         Returns:
             target1 - a new List with >= 50% of the original List (List)
-            target2 - a new List with <= 50% of the original List (List)
+            target2 - a new List with < 50% of the original List (List)
         -------------------------------------------------------
         """
         # your code here
         target1 = List()
         target2 = List()
         
-        # This floors so access 2nd half as this onwards
-        middle = self._count // 2
-        
-        current = self._front
-        previous = None
-        
-        # Create a new node to start target1 off
-        new_node = _List_Node(current._value, None)
-        target1._front = new_node
-        target1._rear = new_node
-        target1._count = 1
-        previous = current
-        current = current._next
-        previous._next = None
-        self._count -= 1
-        index = 1
-        # Go up to the middle of the list
-        while index < middle:
-            target1._rear._next = current
-            target1._rear = current
+        # Nothing to split if no nodes
+        if self._front is not None:
+            
+            current = self._front
+            previous = None
+            
+            # Create a new node to start target1 off
+            new_node = _List_Node(current._value, None)
+            target1._front = new_node
+            target1._rear = new_node
+            target1._count += 1
             previous = current
-            current = current._next
-            previous._next = None
-            self._count -= 1
-            index += 1
-        
-        # Create a new node to start target2 off
-        new_node2 = _List_Node(current._value, None)
-        target2._front = new_node2
-        target2._rear = new_node2
-        target2._count = 1
-        previous = current
-        current = current._next
-        previous._next = None
-        self._count -= 1
-        
-        # Go to the end of the List
-        while current is not None:
-            previous = current
-            target2._rear._next = current
-            target2._rear = current
             current = current._next
             previous._next = None
             self._count -= 1
             
-        # Feel like this is a bit forced..
-        self._front = None
-        self._rear = None
+            # This floors so access 2nd half as this onwards
+            middle = self._count // 2 - 1
+            
+            # If there was only one node in this List, we are done
+            if self._count > 0:
+                index = 0
+                # Go up to, but not including, the middle of the list
+                while index <= middle:
+                    target1._rear._next = current
+                    target1._rear = current
+                    previous = current
+                    current = current._next
+                    previous._next = None
+                    self._count -= 1
+                    index += 1
+                    target1._count += 1
+            
+                if self._front is not None:
+                    # Create a new node to start target2 off
+                    new_node2 = _List_Node(current._value, None)
+                    target2._front = new_node2
+                    target2._rear = new_node2
+                    target2._count = 1
+                    previous = current
+                    current = current._next
+                    previous._next = None
+                    self._count -= 1
+                    
+                    # Go to the end of the List
+                    while current is not None:
+                        previous = current
+                        target2._rear._next = current
+                        target2._rear = current
+                        current = current._next
+                        previous._next = None
+                        self._count -= 1
+                        target2._count += 1
+                    
+            # Feel like this is a bit forced..
+            self._front = None
+            self._rear = None
         return target1, target2
 
     def split_alt(self):
@@ -980,7 +991,15 @@ class List:
 
                 if current is None:
                     # Value does not appear in target list.
-                    self.append(value)
+                    #self.append(value)
+                    new_node = _List_Node(value, None)
+                    if self._rear is None:
+                        self._front = new_node
+                        self._rear = new_node
+                    else:
+                        self._rear._next = new_node
+                        self._rear = new_node
+                    self._count += 1
 
             source1_node = source1_node._next
         return
@@ -1043,7 +1062,15 @@ class List:
 
             if current is None:
                 # Value does not exist in new list.
-                self.append(value)
+                #self.append(value)
+                new_node = _List_Node(value, None)
+                if self._rear is None:
+                    self._rear = new_node
+                    self._front = new_node
+                else:
+                    self._rear._next = new_node
+                    self._rear = new_node
+                self._count += 1
             source1_node = source1_node._next
 
         source2_node = source2._front
@@ -1054,10 +1081,23 @@ class List:
 
             if current is None:
                 # Value does not exist in current list.
-                self.append(value)
-
+                #self.append(value)
+                new_node = _List_Node(value, None)
+                """ Previous (what was marked)
+                self._rear._next = new_node
+                self._rear = new_node
+                self._count += 1
+                """
+                # Added after assignment marked (fixes AttributeError)
+                if self._front is None:
+                    self._rear = new_node
+                    self._front = new_node
+                else:
+                    self._rear._next = new_node
+                    self._rear = new_node
+                # END OF ADDITIONS
+                
             source2_node = source2_node._next
-        return
         return
 
     def union_r(self, source1, source2):
@@ -1294,52 +1334,107 @@ class List:
         -------------------------------------------------------
         """
         # your code here
-        current1 = source1._front
-        previous1 = None
-        current2 = source2._front
-        previous2 = None
         
-        # Two cases
-        # Current list is empty, set front, rear, then start appending
-        if self._rear is None:
-            self._rear = current2
-            new_node = _List_Node(current1._value, self._rear)
-            self._front = new_node
-            previous1 = current1
-            current1 = current1._next
-            previous1._next = None
-            source1._count -= 1
-            previous2 = current2
-            current2 = current2._next
-            previous2._next = None
-            source2._count -= 1
-            self._count += 2
-        # Current list not empty, just appending
-        while current1 is not None:
-            self._rear._next = current1
-            self._rear = current1
-            previous1 = current1
-            current1 = current1._next
-            previous1._next = None
-            source1._count -= 1
+        # Used if one of the Lists are empty
+        main_node = None
+        
+        if source1._front is None and source2._front is not None:
+            # Source1 is empty, so only using source2
+            new_node = _List_Node(source2._front._value, None)
+            if self._rear is None:
+                self._rear = new_node
+                self._front = new_node
+            else:
+                self._rear._next = new_node
+                self._rear = new_node
             self._count += 1
-            if current2 is not None:
-                self._rear._next = current2
-                self._rear = current2
-                previous2 = current2
-                current2 = current2._next
-                previous2._next = None
-                source2._count -= 1
+            source2._front = source2._front._next
+            source2._count -= 1
+            main_node = source2
+        elif source2._front is None and source1._front is not None:
+            # Source2 is empty, so only using source1
+            new_node = _List_Node(source1._front._value, None)
+            if self._rear is None:
+                self._rear = new_node
+                self._front = new_node
+            else:
+                self._rear._next = new_node
+                self._rear = new_node
+            self._count += 1
+            source1._front = source1._front._next
+            source1._count -= 1
+            main_node = source1
+        elif source1._front is not None and source2._front is not None:
+            # Both have nodes, start interlacing
+            new_node = _List_Node(source1._front._value, None)
+            if self._rear is None:
+                self._rear = new_node
+                self._front = new_node
+            else:
+                self._rear._next = new_node
+                self._rear = new_node
+            self._count += 1
+            source1._count -= 1
+            # Update the front
+            source1._front = source1._front._next
+            
+            new_node = _List_Node(source2._front._value, None)
+            if self._rear is None:
+                self._rear = new_node
+                self._front = new_node
+            else:
+                self._rear._next = new_node
+                self._rear = new_node
+            self._count += 1
+            source2._count -= 1
+            source2._front = source2._front._next
+            
+        # Both source1 and source2 have nodes
+        if main_node is None:
+            
+            source1_node = source1._front
+            source2_node = source2._front
+            
+            while source1_node is not None:
+                self._rear._next = source1_node
+                self._rear = source1_node
+                source1_prev = source1_node
+                source1_node = source1_node._next
+                source1_prev = None
+                source1._count -= 1
                 self._count += 1
-        # Could not figure out why removing on the fly
-        # wasn't working, so here is my solution
-        source1._front = None
-        source1._rear = None
-        source1._count = 0
+                if source2_node is not None:
+                    self._rear._next = source2_node
+                    self._rear = source2_node
+                    source2_prev = source2_node
+                    source2_node = source2_node._next
+                    source2_prev = None
+                    source2._count -= 1
+                    self._count += 1
+            source1._front = None
+            source1._rear = None
+            source2._front = None
+            source2._rear = None
+        else:
+            # One of the sources don't have nodes, use main_node which
+            # represents the non-empty list
+            current = main_node._front
+            previous = None
+            
+            while current is not None:
+                self._rear._next = current
+                self._rear = current
+                previous = current
+                current = current._next
+                previous._next = None
+                main_node._count -= 1
+                self._count += 1
+            
+            main_node._front = None
+            main_node._rear = None
+            
+                    
         
-        source2._front = None
-        source2._rear = None
-        source2._count = 0
         return
 
     def combine_r(self, source1, source2):

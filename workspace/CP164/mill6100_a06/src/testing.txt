@@ -1,0 +1,830 @@
+
+-------------------------------------------------------
+Assignment 5 Testing
+-------------------------------------------------------
+Author  Nicolas Mills
+ID      180856100
+Email   mill6100@mylaurier.ca
+Version 2019-03-01
+-------------------------------------------------------
+
+-------------------------------------------------------
+Task 1
+-------------------------------------------------------
+
+
+Testing List#is_identical
+
+Same values
+List 1 contents: [<Movie.Movie object at 0x01A199B0>, <Movie.Movie object at 0x01A19A30>, <Movie.Movie object at 0x01A19AB0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19BB0>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19CB0>, <Movie.Movie object at 0x01A19D30>, <Movie.Movie object at 0x01A19DB0>, <Movie.Movie object at 0x01A19E30>, <Movie.Movie object at 0x01A19EB0>, <Movie.Movie object at 0x01A19F30>, <Movie.Movie object at 0x01A19FB0>, <Movie.Movie object at 0x01A20050>, <Movie.Movie object at 0x01A200D0>, <Movie.Movie object at 0x01A20150>, <Movie.Movie object at 0x01A201D0>, <Movie.Movie object at 0x01A20250>, <Movie.Movie object at 0x01A202D0>, <Movie.Movie object at 0x01A20350>]
+List 2 contents: [<Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19A70>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19B70>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19C70>, <Movie.Movie object at 0x01A19CF0>, <Movie.Movie object at 0x01A19D70>, <Movie.Movie object at 0x01A19DF0>, <Movie.Movie object at 0x01A19E70>, <Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A19F70>, <Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A20090>, <Movie.Movie object at 0x01A20110>, <Movie.Movie object at 0x01A20190>, <Movie.Movie object at 0x01A20210>, <Movie.Movie object at 0x01A20290>, <Movie.Movie object at 0x01A20310>, <Movie.Movie object at 0x01A20390>]
+Identical? True	Expected: True
+
+Different values
+List 1 contents: [<Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19A70>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19B70>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19C70>, <Movie.Movie object at 0x01A19CF0>, <Movie.Movie object at 0x01A19D70>, <Movie.Movie object at 0x01A19DF0>, <Movie.Movie object at 0x01A19E70>]
+List 2 contents: [<Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A19F70>, <Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A199B0>, <Movie.Movie object at 0x01A19A30>, <Movie.Movie object at 0x01A19AB0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19BB0>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19CB0>]
+Identical? False	Expected: False
+
+Empty lists
+List 1 contents: []
+List 2 contents: []
+Identical? True	Expected: True
+
+
+Testing List#remove_many
+
+Empty list
+Removed: Title:    Dellamorte Dellamore
+Year:     1994
+Director: None
+Rating:   None
+Genres:   
+List contents after remove: []
+Expected: []
+
+Missing key
+Removed: Title:    Dellamorte Dellamore
+Year:     1994
+Director: None
+Rating:   None
+Genres:   
+List contents after remove: [<Movie.Movie object at 0x01A19ED0>, <Movie.Movie object at 0x01A19F70>, <Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A199B0>, <Movie.Movie object at 0x01A19A30>, <Movie.Movie object at 0x01A19AB0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19BB0>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19E70>, <Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19A70>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19B70>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19C70>, <Movie.Movie object at 0x01A19CF0>, <Movie.Movie object at 0x01A19D70>, <Movie.Movie object at 0x01A19DF0>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19750>, <Movie.Movie object at 0x01A19770>, <Movie.Movie object at 0x01A19430>, <Movie.Movie object at 0x01A197B0>, <Movie.Movie object at 0x01A197D0>, <Movie.Movie object at 0x01A19810>, <Movie.Movie object at 0x01A19410>, <Movie.Movie object at 0x01A19850>, <Movie.Movie object at 0x01A19870>, <Movie.Movie object at 0x01A197F0>, <Movie.Movie object at 0x01A198B0>, <Movie.Movie object at 0x01A19830>, <Movie.Movie object at 0x01A198D0>, <Movie.Movie object at 0x01A198F0>, <Movie.Movie object at 0x01A19910>, <Movie.Movie object at 0x01A19950>, <Movie.Movie object at 0x01A19990>]
+
+List only contains the key
+Initial contents: [<Movie.Movie object at 0x01A19DD0>, <Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A19F50>, <Movie.Movie object at 0x01A19FD0>, <Movie.Movie object at 0x01A196D0>]
+Removed: Title:    Dellamorte Dellamore
+Year:     1994
+Director: None
+Rating:   None
+Genres:   
+List contents after remove: []
+Expected: []
+
+
+Testing List#__getitem__
+
+Empty list
+Invalid index. Assertion thrown correctly
+
+List of values
+Item returned from my_list[0]: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+
+
+Testing List#clean
+
+Empty list
+Cleaned list
+Contents after clean: []
+Expected: []
+
+No duplicates
+Initial contents: [<Movie.Movie object at 0x01A19D30>, <Movie.Movie object at 0x01A196D0>, <Movie.Movie object at 0x01A19ED0>, <Movie.Movie object at 0x01A19DF0>, <Movie.Movie object at 0x01A19970>, <Movie.Movie object at 0x01A19C90>, <Movie.Movie object at 0x01A19A30>, <Movie.Movie object at 0x01A19AB0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19BB0>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19E70>, <Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19A70>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19B70>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19C70>, <Movie.Movie object at 0x01A19CF0>, <Movie.Movie object at 0x01A19D70>]
+Cleaned list
+Contents after clean: [<Movie.Movie object at 0x01A19D30>, <Movie.Movie object at 0x01A196D0>, <Movie.Movie object at 0x01A19ED0>, <Movie.Movie object at 0x01A19DF0>, <Movie.Movie object at 0x01A19970>, <Movie.Movie object at 0x01A19C90>, <Movie.Movie object at 0x01A19A30>, <Movie.Movie object at 0x01A19AB0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19BB0>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19E70>, <Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19A70>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19B70>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19C70>, <Movie.Movie object at 0x01A19CF0>, <Movie.Movie object at 0x01A19D70>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19750>, <Movie.Movie object at 0x01A19770>, <Movie.Movie object at 0x01A19430>, <Movie.Movie object at 0x01A197B0>, <Movie.Movie object at 0x01A197D0>, <Movie.Movie object at 0x01A19810>, <Movie.Movie object at 0x01A19410>, <Movie.Movie object at 0x01A19850>, <Movie.Movie object at 0x01A19870>, <Movie.Movie object at 0x01A197F0>, <Movie.Movie object at 0x01A198B0>, <Movie.Movie object at 0x01A19830>, <Movie.Movie object at 0x01A198D0>, <Movie.Movie object at 0x01A198F0>, <Movie.Movie object at 0x01A19910>, <Movie.Movie object at 0x01A19950>, <Movie.Movie object at 0x01A19990>]
+
+Some duplicates
+Initial values: [<Movie.Movie object at 0x01A19D50>, <Movie.Movie object at 0x01A19D30>, <Movie.Movie object at 0x01A196D0>, <Movie.Movie object at 0x01A19ED0>, <Movie.Movie object at 0x01A19DF0>, <Movie.Movie object at 0x01A19970>, <Movie.Movie object at 0x01A19C90>, <Movie.Movie object at 0x01A19A30>, <Movie.Movie object at 0x01A19AB0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19BB0>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19E70>, <Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19A70>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19B70>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19C70>, <Movie.Movie object at 0x01A19CF0>, <Movie.Movie object at 0x01A19DB0>]
+Cleaned list
+Contents after clean: [<Movie.Movie object at 0x01A19D50>, <Movie.Movie object at 0x01A196D0>, <Movie.Movie object at 0x01A19ED0>, <Movie.Movie object at 0x01A19DF0>, <Movie.Movie object at 0x01A19970>, <Movie.Movie object at 0x01A19C90>, <Movie.Movie object at 0x01A19A30>, <Movie.Movie object at 0x01A19AB0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19BB0>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19E70>, <Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19A70>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19B70>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19C70>, <Movie.Movie object at 0x01A19CF0>, <Movie.Movie object at 0x01A19DB0>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19750>, <Movie.Movie object at 0x01A19770>, <Movie.Movie object at 0x01A19430>, <Movie.Movie object at 0x01A197B0>, <Movie.Movie object at 0x01A197D0>, <Movie.Movie object at 0x01A19810>, <Movie.Movie object at 0x01A19410>, <Movie.Movie object at 0x01A19850>, <Movie.Movie object at 0x01A19870>, <Movie.Movie object at 0x01A197F0>, <Movie.Movie object at 0x01A198B0>, <Movie.Movie object at 0x01A19830>, <Movie.Movie object at 0x01A198D0>, <Movie.Movie object at 0x01A198F0>, <Movie.Movie object at 0x01A19910>, <Movie.Movie object at 0x01A19950>, <Movie.Movie object at 0x01A19990>, <Movie.Movie object at 0x01A19690>]
+
+All values are the same
+Cleaned list
+Contents after clean: [<Movie.Movie object at 0x01A19E10>]
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+
+
+Testing List#intersection
+
+Empty lists
+List 1 contents: []
+List 2 contents: []
+List intersection
+Contents of intersection: []
+Expected: []
+
+No shared values
+List 1 contents: [<Movie.Movie object at 0x01A19F50>, <Movie.Movie object at 0x01A196D0>, <Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A19F70>, <Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A19DD0>, <Movie.Movie object at 0x01A199B0>, <Movie.Movie object at 0x01A19A90>, <Movie.Movie object at 0x01A19B10>, <Movie.Movie object at 0x01A19B90>]
+List 2 contents: [<Movie.Movie object at 0x01A19C10>, <Movie.Movie object at 0x01A19E50>, <Movie.Movie object at 0x01A199D0>, <Movie.Movie object at 0x01A19A50>, <Movie.Movie object at 0x01A19AD0>, <Movie.Movie object at 0x01A19B50>, <Movie.Movie object at 0x01A19BD0>, <Movie.Movie object at 0x01A19C50>, <Movie.Movie object at 0x01A19CD0>, <Movie.Movie object at 0x01A19E30>]
+List intersection
+Intersection List contents: []
+Expected: []
+
+Some shared values
+List 1 contents: [<Movie.Movie object at 0x01A19E30>, <Movie.Movie object at 0x01A19C10>, <Movie.Movie object at 0x01A19E50>, <Movie.Movie object at 0x01A199D0>, <Movie.Movie object at 0x01A19A50>, <Movie.Movie object at 0x01A19AD0>, <Movie.Movie object at 0x01A19B50>, <Movie.Movie object at 0x01A19BD0>, <Movie.Movie object at 0x01A19C50>, <Movie.Movie object at 0x01A19CD0>, <Movie.Movie object at 0x01A19B90>, <Movie.Movie object at 0x01A19F50>, <Movie.Movie object at 0x01A196D0>]
+List 2 contents: [<Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A19F70>, <Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A19DD0>, <Movie.Movie object at 0x01A199B0>, <Movie.Movie object at 0x01A19A90>, <Movie.Movie object at 0x01A19B10>, <Movie.Movie object at 0x01A19D10>, <Movie.Movie object at 0x01A19EB0>, <Movie.Movie object at 0x01A19F30>]
+List intersection
+Intersection List contents: [<Movie.Movie object at 0x01A19F90>, <Movie.Movie object at 0x01A23030>, <Movie.Movie object at 0x01A23070>]
+Expected: [<Movie.Movie object at 0x01A19850>, <Movie.Movie object at 0x01A19870>, <Movie.Movie object at 0x01A197F0>]
+
+All values are shared
+List 1 contents: [<Movie.Movie object at 0x01A19F90>, <Movie.Movie object at 0x01A19FD0>, <Movie.Movie object at 0x01A19DF0>, <Movie.Movie object at 0x01A19C90>, <Movie.Movie object at 0x01A19AB0>, <Movie.Movie object at 0x01A19E90>, <Movie.Movie object at 0x01A19CF0>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A23050>, <Movie.Movie object at 0x01A230D0>, <Movie.Movie object at 0x01A23150>, <Movie.Movie object at 0x01A231D0>, <Movie.Movie object at 0x01A23250>, <Movie.Movie object at 0x01A232D0>, <Movie.Movie object at 0x01A23350>, <Movie.Movie object at 0x01A233D0>]
+List 2 contents: [<Movie.Movie object at 0x01A19F10>, <Movie.Movie object at 0x01A19DB0>, <Movie.Movie object at 0x01A19970>, <Movie.Movie object at 0x01A19A30>, <Movie.Movie object at 0x01A19D70>, <Movie.Movie object at 0x01A19E10>, <Movie.Movie object at 0x01A19BB0>, <Movie.Movie object at 0x01A19E70>, <Movie.Movie object at 0x01A19A70>, <Movie.Movie object at 0x01A19B70>, <Movie.Movie object at 0x01A19C70>, <Movie.Movie object at 0x01A19D90>, <Movie.Movie object at 0x01A23030>, <Movie.Movie object at 0x01A23110>, <Movie.Movie object at 0x01A23190>, <Movie.Movie object at 0x01A23210>, <Movie.Movie object at 0x01A23290>, <Movie.Movie object at 0x01A23310>, <Movie.Movie object at 0x01A23390>, <Movie.Movie object at 0x01A23410>]
+List intersection
+Intersection List contents: [<Movie.Movie object at 0x01A23430>, <Movie.Movie object at 0x01A23470>, <Movie.Movie object at 0x01A234D0>, <Movie.Movie object at 0x01A234F0>, <Movie.Movie object at 0x01A23530>, <Movie.Movie object at 0x01A23570>, <Movie.Movie object at 0x01A235B0>, <Movie.Movie object at 0x01A235F0>, <Movie.Movie object at 0x01A23650>, <Movie.Movie object at 0x01A23670>, <Movie.Movie object at 0x01A236B0>, <Movie.Movie object at 0x01A236F0>, <Movie.Movie object at 0x01A23730>, <Movie.Movie object at 0x01A23770>, <Movie.Movie object at 0x01A237B0>, <Movie.Movie object at 0x01A237F0>, <Movie.Movie object at 0x01A23830>, <Movie.Movie object at 0x01A23870>, <Movie.Movie object at 0x01A238D0>, <Movie.Movie object at 0x01A238F0>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19750>, <Movie.Movie object at 0x01A19770>, <Movie.Movie object at 0x01A19430>, <Movie.Movie object at 0x01A197B0>, <Movie.Movie object at 0x01A197D0>, <Movie.Movie object at 0x01A19810>, <Movie.Movie object at 0x01A19410>, <Movie.Movie object at 0x01A19850>, <Movie.Movie object at 0x01A19870>, <Movie.Movie object at 0x01A197F0>, <Movie.Movie object at 0x01A198B0>, <Movie.Movie object at 0x01A19830>, <Movie.Movie object at 0x01A198D0>, <Movie.Movie object at 0x01A198F0>, <Movie.Movie object at 0x01A19910>, <Movie.Movie object at 0x01A19950>, <Movie.Movie object at 0x01A19990>]
+
+
+Testing List#union
+
+Empty lists
+List 1 contents: []
+List 2 contents: []
+List union
+Union List contents: []
+Expected: []
+
+One empty list
+List 1 contents: [<Movie.Movie object at 0x01A19F10>, <Movie.Movie object at 0x01A19DB0>, <Movie.Movie object at 0x01A19970>, <Movie.Movie object at 0x01A19A30>, <Movie.Movie object at 0x01A19D70>, <Movie.Movie object at 0x01A19E10>, <Movie.Movie object at 0x01A19BB0>, <Movie.Movie object at 0x01A19E70>, <Movie.Movie object at 0x01A19A70>, <Movie.Movie object at 0x01A19B70>, <Movie.Movie object at 0x01A19C70>, <Movie.Movie object at 0x01A19D90>, <Movie.Movie object at 0x01A19F30>, <Movie.Movie object at 0x01A19F70>, <Movie.Movie object at 0x01A19DD0>, <Movie.Movie object at 0x01A19A90>, <Movie.Movie object at 0x01A19D10>, <Movie.Movie object at 0x01A196D0>, <Movie.Movie object at 0x01A19C10>, <Movie.Movie object at 0x01A199D0>]
+List 2 contents: []
+List union
+Union List contents: [<Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A25030>, <Movie.Movie object at 0x01A25070>, <Movie.Movie object at 0x01A250B0>, <Movie.Movie object at 0x01A250F0>, <Movie.Movie object at 0x01A25150>, <Movie.Movie object at 0x01A25170>, <Movie.Movie object at 0x01A251B0>, <Movie.Movie object at 0x01A251F0>, <Movie.Movie object at 0x01A25230>, <Movie.Movie object at 0x01A25270>, <Movie.Movie object at 0x01A252B0>, <Movie.Movie object at 0x01A252F0>, <Movie.Movie object at 0x01A25330>, <Movie.Movie object at 0x01A25370>, <Movie.Movie object at 0x01A253B0>, <Movie.Movie object at 0x01A253F0>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19750>, <Movie.Movie object at 0x01A19770>, <Movie.Movie object at 0x01A19430>, <Movie.Movie object at 0x01A197B0>, <Movie.Movie object at 0x01A197D0>, <Movie.Movie object at 0x01A19810>, <Movie.Movie object at 0x01A19410>, <Movie.Movie object at 0x01A19850>, <Movie.Movie object at 0x01A19870>, <Movie.Movie object at 0x01A197F0>, <Movie.Movie object at 0x01A198B0>, <Movie.Movie object at 0x01A19830>, <Movie.Movie object at 0x01A198D0>, <Movie.Movie object at 0x01A198F0>, <Movie.Movie object at 0x01A19910>, <Movie.Movie object at 0x01A19950>, <Movie.Movie object at 0x01A19990>]
+
+Both lists non-empty
+List 1 contents: [<Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19FB0>, <Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A199B0>, <Movie.Movie object at 0x01A19B10>]
+List 2 contents: [<Movie.Movie object at 0x01A19EB0>, <Movie.Movie object at 0x01A19E30>, <Movie.Movie object at 0x01A19E50>, <Movie.Movie object at 0x01A19A50>, <Movie.Movie object at 0x01A19B50>, <Movie.Movie object at 0x01A19C50>, <Movie.Movie object at 0x01A19B90>, <Movie.Movie object at 0x01A19F90>, <Movie.Movie object at 0x01A19FD0>, <Movie.Movie object at 0x01A19DF0>]
+List union
+Union List contents: [<Movie.Movie object at 0x01A19DD0>, <Movie.Movie object at 0x01A19A90>, <Movie.Movie object at 0x01A19D10>, <Movie.Movie object at 0x01A196D0>, <Movie.Movie object at 0x01A19C10>, <Movie.Movie object at 0x01A253F0>, <Movie.Movie object at 0x01A25050>, <Movie.Movie object at 0x01A25090>, <Movie.Movie object at 0x01A250F0>, <Movie.Movie object at 0x01A25110>, <Movie.Movie object at 0x01A25130>, <Movie.Movie object at 0x01A25190>, <Movie.Movie object at 0x01A251D0>, <Movie.Movie object at 0x01A25210>, <Movie.Movie object at 0x01A25250>, <Movie.Movie object at 0x01A25290>, <Movie.Movie object at 0x01A252D0>, <Movie.Movie object at 0x01A25310>, <Movie.Movie object at 0x01A25350>, <Movie.Movie object at 0x01A25390>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19750>, <Movie.Movie object at 0x01A19770>, <Movie.Movie object at 0x01A19430>, <Movie.Movie object at 0x01A197B0>, <Movie.Movie object at 0x01A197D0>, <Movie.Movie object at 0x01A19810>, <Movie.Movie object at 0x01A19410>, <Movie.Movie object at 0x01A19850>, <Movie.Movie object at 0x01A19870>, <Movie.Movie object at 0x01A197F0>, <Movie.Movie object at 0x01A198B0>, <Movie.Movie object at 0x01A19830>, <Movie.Movie object at 0x01A198D0>, <Movie.Movie object at 0x01A198F0>, <Movie.Movie object at 0x01A19910>, <Movie.Movie object at 0x01A19950>, <Movie.Movie object at 0x01A19990>]
+
+
+Testing List#prepend
+
+Empty list
+Initial contents: []
+Prepended Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genres:   fantasy, action
+Post-prepend contents: [<Movie.Movie object at 0x01A19A30>]
+Expected: Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genres:   fantasy, action
+
+List with initial values
+Initial contents: [<Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19FB0>, <Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A199B0>, <Movie.Movie object at 0x01A25410>, <Movie.Movie object at 0x01A25450>, <Movie.Movie object at 0x01A25490>, <Movie.Movie object at 0x01A254D0>, <Movie.Movie object at 0x01A25510>, <Movie.Movie object at 0x01A25550>, <Movie.Movie object at 0x01A25590>, <Movie.Movie object at 0x01A255D0>, <Movie.Movie object at 0x01A25610>, <Movie.Movie object at 0x01A25650>, <Movie.Movie object at 0x01A25690>]
+Prepended Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Post-prepend contents: [<Movie.Movie object at 0x01A256B0>, <Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19FB0>, <Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A199B0>, <Movie.Movie object at 0x01A25410>, <Movie.Movie object at 0x01A25450>, <Movie.Movie object at 0x01A25490>, <Movie.Movie object at 0x01A254D0>, <Movie.Movie object at 0x01A25510>, <Movie.Movie object at 0x01A25550>, <Movie.Movie object at 0x01A25590>, <Movie.Movie object at 0x01A255D0>, <Movie.Movie object at 0x01A25610>, <Movie.Movie object at 0x01A25650>, <Movie.Movie object at 0x01A25690>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19750>, <Movie.Movie object at 0x01A19770>, <Movie.Movie object at 0x01A19430>, <Movie.Movie object at 0x01A197B0>, <Movie.Movie object at 0x01A197D0>, <Movie.Movie object at 0x01A19810>, <Movie.Movie object at 0x01A19410>, <Movie.Movie object at 0x01A19850>, <Movie.Movie object at 0x01A19870>, <Movie.Movie object at 0x01A197F0>, <Movie.Movie object at 0x01A198B0>, <Movie.Movie object at 0x01A19830>, <Movie.Movie object at 0x01A198D0>, <Movie.Movie object at 0x01A198F0>, <Movie.Movie object at 0x01A19910>, <Movie.Movie object at 0x01A19950>, <Movie.Movie object at 0x01A19990>]
+
+
+Testing List#append
+
+Empty list
+Initial contents: []
+Appended Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Post-append List contents: [<Movie.Movie object at 0x01A19890>]
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+
+List with initial values
+Initial contents: [<Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19FB0>, <Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A199B0>, <Movie.Movie object at 0x01A25670>, <Movie.Movie object at 0x01A256B0>, <Movie.Movie object at 0x01A25410>, <Movie.Movie object at 0x01A25450>, <Movie.Movie object at 0x01A25490>, <Movie.Movie object at 0x01A254D0>, <Movie.Movie object at 0x01A25510>, <Movie.Movie object at 0x01A25550>, <Movie.Movie object at 0x01A25590>, <Movie.Movie object at 0x01A255D0>, <Movie.Movie object at 0x01A25610>]
+Appended Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Post-append List contents: [<Movie.Movie object at 0x01A199F0>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19FB0>, <Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A199B0>, <Movie.Movie object at 0x01A25670>, <Movie.Movie object at 0x01A256B0>, <Movie.Movie object at 0x01A25410>, <Movie.Movie object at 0x01A25450>, <Movie.Movie object at 0x01A25490>, <Movie.Movie object at 0x01A254D0>, <Movie.Movie object at 0x01A25510>, <Movie.Movie object at 0x01A25550>, <Movie.Movie object at 0x01A25590>, <Movie.Movie object at 0x01A255D0>, <Movie.Movie object at 0x01A25610>, <Movie.Movie object at 0x01A25630>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19750>, <Movie.Movie object at 0x01A19770>, <Movie.Movie object at 0x01A19430>, <Movie.Movie object at 0x01A197B0>, <Movie.Movie object at 0x01A197D0>, <Movie.Movie object at 0x01A19810>, <Movie.Movie object at 0x01A19410>, <Movie.Movie object at 0x01A19850>, <Movie.Movie object at 0x01A19870>, <Movie.Movie object at 0x01A197F0>, <Movie.Movie object at 0x01A198B0>, <Movie.Movie object at 0x01A19830>, <Movie.Movie object at 0x01A198D0>, <Movie.Movie object at 0x01A198F0>, <Movie.Movie object at 0x01A19910>, <Movie.Movie object at 0x01A19950>, <Movie.Movie object at 0x01A19990>, <Movie.Movie object at 0x01A19690>]
+
+
+Testing List#remove_front
+
+Empty list
+Initial list contents: []
+Tried removing from an empty list. Assertion thrown correctly
+
+Populated list
+Initial list contents: <generator object <genexpr> at 0x01A0FF30>
+Removed front of List
+Value removed from front: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Contents of list after removing front: [<Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19FB0>, <Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A199B0>, <Movie.Movie object at 0x01A25630>, <Movie.Movie object at 0x01A25670>, <Movie.Movie object at 0x01A256B0>, <Movie.Movie object at 0x01A25410>, <Movie.Movie object at 0x01A25450>, <Movie.Movie object at 0x01A25490>, <Movie.Movie object at 0x01A254D0>, <Movie.Movie object at 0x01A25510>, <Movie.Movie object at 0x01A25550>, <Movie.Movie object at 0x01A25590>, <Movie.Movie object at 0x01A255D0>]
+
+
+Testing List#combine
+
+Empty lists
+List 1 Contents: []
+List 2 Contents: []
+Combined the lists
+Combined list contents: []
+Expected: []
+
+One empty list
+List 1 Contents: [<Movie.Movie object at 0x01A19D30>, <Movie.Movie object at 0x01A19A90>, <Movie.Movie object at 0x01A19D10>, <Movie.Movie object at 0x01A196D0>, <Movie.Movie object at 0x01A19C10>, <Movie.Movie object at 0x01A19DF0>, <Movie.Movie object at 0x01A19EB0>, <Movie.Movie object at 0x01A19E30>, <Movie.Movie object at 0x01A19E50>, <Movie.Movie object at 0x01A19A50>, <Movie.Movie object at 0x01A19B50>, <Movie.Movie object at 0x01A19C50>, <Movie.Movie object at 0x01A19B90>, <Movie.Movie object at 0x01A19F90>, <Movie.Movie object at 0x01A19FD0>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19FB0>]
+List 2 Contents: []
+Combined the lists
+Combined list contents: [<Movie.Movie object at 0x01A19F10>, <Movie.Movie object at 0x01A19A90>, <Movie.Movie object at 0x01A19D10>, <Movie.Movie object at 0x01A196D0>, <Movie.Movie object at 0x01A19C10>, <Movie.Movie object at 0x01A19DF0>, <Movie.Movie object at 0x01A19EB0>, <Movie.Movie object at 0x01A19E30>, <Movie.Movie object at 0x01A19E50>, <Movie.Movie object at 0x01A19A50>, <Movie.Movie object at 0x01A19B50>, <Movie.Movie object at 0x01A19C50>, <Movie.Movie object at 0x01A19B90>, <Movie.Movie object at 0x01A19F90>, <Movie.Movie object at 0x01A19FD0>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19C30>, <Movie.Movie object at 0x01A19FB0>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19750>, <Movie.Movie object at 0x01A19770>, <Movie.Movie object at 0x01A19430>, <Movie.Movie object at 0x01A197B0>, <Movie.Movie object at 0x01A197D0>, <Movie.Movie object at 0x01A19810>, <Movie.Movie object at 0x01A19410>, <Movie.Movie object at 0x01A19850>, <Movie.Movie object at 0x01A19870>, <Movie.Movie object at 0x01A197F0>, <Movie.Movie object at 0x01A198B0>, <Movie.Movie object at 0x01A19830>, <Movie.Movie object at 0x01A198D0>, <Movie.Movie object at 0x01A198F0>, <Movie.Movie object at 0x01A19910>, <Movie.Movie object at 0x01A19950>, <Movie.Movie object at 0x01A19990>]
+
+Both non-empty
+List 1 Contents: [<Movie.Movie object at 0x01A19FB0>, <Movie.Movie object at 0x01A19F10>, <Movie.Movie object at 0x01A19A90>, <Movie.Movie object at 0x01A19D10>, <Movie.Movie object at 0x01A196D0>, <Movie.Movie object at 0x01A19C10>, <Movie.Movie object at 0x01A19DF0>, <Movie.Movie object at 0x01A19EB0>, <Movie.Movie object at 0x01A19E30>, <Movie.Movie object at 0x01A19E50>]
+List 2 Contents: [<Movie.Movie object at 0x01A19A50>, <Movie.Movie object at 0x01A19B50>, <Movie.Movie object at 0x01A19C50>, <Movie.Movie object at 0x01A19B90>, <Movie.Movie object at 0x01A19F90>, <Movie.Movie object at 0x01A19FD0>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19C30>]
+Combined the lists
+Combined list contents: [<Movie.Movie object at 0x01A19D30>, <Movie.Movie object at 0x01A19FB0>, <Movie.Movie object at 0x01A19F10>, <Movie.Movie object at 0x01A19B50>, <Movie.Movie object at 0x01A19A90>, <Movie.Movie object at 0x01A19C50>, <Movie.Movie object at 0x01A19D10>, <Movie.Movie object at 0x01A19B90>, <Movie.Movie object at 0x01A196D0>, <Movie.Movie object at 0x01A19F90>, <Movie.Movie object at 0x01A19C10>, <Movie.Movie object at 0x01A19FD0>, <Movie.Movie object at 0x01A19DF0>, <Movie.Movie object at 0x01A19AF0>, <Movie.Movie object at 0x01A19EB0>, <Movie.Movie object at 0x01A19BF0>, <Movie.Movie object at 0x01A19E30>, <Movie.Movie object at 0x01A19B30>, <Movie.Movie object at 0x01A19E50>, <Movie.Movie object at 0x01A19C30>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19750>, <Movie.Movie object at 0x01A19770>, <Movie.Movie object at 0x01A19430>, <Movie.Movie object at 0x01A197B0>, <Movie.Movie object at 0x01A197D0>, <Movie.Movie object at 0x01A19810>, <Movie.Movie object at 0x01A19410>, <Movie.Movie object at 0x01A19850>, <Movie.Movie object at 0x01A19870>, <Movie.Movie object at 0x01A197F0>, <Movie.Movie object at 0x01A198B0>, <Movie.Movie object at 0x01A19830>, <Movie.Movie object at 0x01A198D0>, <Movie.Movie object at 0x01A198F0>, <Movie.Movie object at 0x01A19910>, <Movie.Movie object at 0x01A19950>, <Movie.Movie object at 0x01A19990>]
+
+
+Testing List#split
+
+Empty list
+Initial list contents: []
+List split
+Target 1 Contents: []
+Expected: []
+Target 2 Contents: []
+Expected: []
+Original List contents: []
+Expected: []
+
+Non-empty list of length 1
+Initial list contents: [<Movie.Movie object at 0x01A19DB0>]
+Target 1 Contents: [<Movie.Movie object at 0x01A19A30>]
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Target 2 Contents: []
+Expected: []
+Original List contents: []
+Expected: []
+
+Non-empty list of even length > 1
+Initial list contents: [<Movie.Movie object at 0x01A19A50>, <Movie.Movie object at 0x01A28030>, <Movie.Movie object at 0x01A28070>, <Movie.Movie object at 0x01A280B0>]
+Target 1 Contents: [<Movie.Movie object at 0x01A28110>, <Movie.Movie object at 0x01A28030>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>]
+Target 2 Contents: [<Movie.Movie object at 0x01A28150>, <Movie.Movie object at 0x01A280B0>]
+Expected: [<Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19750>]
+Original List contents: []
+Expected: []
+
+Non-empty list of odd length > 1
+Initial list contents: [<Movie.Movie object at 0x01A19EF0>, <Movie.Movie object at 0x01A19DD0>, <Movie.Movie object at 0x01A28050>, <Movie.Movie object at 0x01A28170>, <Movie.Movie object at 0x01A281B0>]
+Target 1 Contents: [<Movie.Movie object at 0x01A28210>, <Movie.Movie object at 0x01A19DD0>, <Movie.Movie object at 0x01A28050>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A196F0>]
+Target 2 Contents: [<Movie.Movie object at 0x01A28250>, <Movie.Movie object at 0x01A281B0>]
+Expected: [<Movie.Movie object at 0x01A19750>, <Movie.Movie object at 0x01A19770>]
+Original List contents: []
+Expected: []
+
+
+Testing List#split_alt
+
+Empty list
+List initial contents: []
+List alt split
+Target 1 Contents: []
+Expected: []
+Target 2 Contents: []
+Expected: []
+Original List contents: []
+Expected: []
+
+Non-empty list with even length
+List initial contents: [<Movie.Movie object at 0x01A19E70>, <Movie.Movie object at 0x01A19FF0>, <Movie.Movie object at 0x01A281D0>, <Movie.Movie object at 0x01A281B0>]
+List alt split
+Target 1 Contents: [<Movie.Movie object at 0x01A28050>, <Movie.Movie object at 0x01A19FF0>]
+Expected: [<Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A19750>]
+Target 2 Contents: [<Movie.Movie object at 0x01A19E70>, <Movie.Movie object at 0x01A281D0>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196F0>]
+Original List contents: []
+Expected: []
+
+Non-empty list with odd length
+List initial contents: [<Movie.Movie object at 0x01A28190>, <Movie.Movie object at 0x01A281F0>, <Movie.Movie object at 0x01A280D0>, <Movie.Movie object at 0x01A280B0>, <Movie.Movie object at 0x01A28150>]
+List alt split
+Target 1 Contents: [<Movie.Movie object at 0x01A28110>, <Movie.Movie object at 0x01A281F0>, <Movie.Movie object at 0x01A280B0>]
+Expected: [<Movie.Movie object at 0x01A196B0>, <Movie.Movie object at 0x01A19750>]
+Target 2 Contents: [<Movie.Movie object at 0x01A28190>, <Movie.Movie object at 0x01A280D0>]
+Expected: [<Movie.Movie object at 0x01A19690>, <Movie.Movie object at 0x01A196F0>, <Movie.Movie object at 0x01A19770>]
+Original List contents: []
+Expected: []
+
+-------------------------------------------------------
+Task 2
+-------------------------------------------------------
+
+
+Testing Sorted_List#insert
+
+Empty list
+Initial SL contents: []
+Inserted Title:    Dellamorte Dellamore
+Year:     1994
+Director: None
+Rating:   None
+Genres:   
+SL Contents: [<Movie.Movie object at 0x008124B0>]
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+
+Non-empty list
+Initial SL contents: [<Movie.Movie object at 0x00812710>]
+Inserted Title:    Dellamorte Dellamore
+Year:     1994
+Director: None
+Rating:   None
+Genres:   
+SL Contents: [<Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x00812710>]
+Expected: [<Movie.Movie object at 0x00812470>, <Movie.Movie object at 0x00812770>]
+
+
+NOT TESTING Sorted_List#_linear_search. Used in remove, find, intersection, union, __contains__, index.
+
+
+Testing Sorted_List#remove
+
+Empty list
+Initial Contents: []
+Value to remove: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Removed value: None
+Remaining list: []
+Expected: []
+
+Non-empty list, remove from front
+Initial Contents: [<Movie.Movie object at 0x00812930>, <Movie.Movie object at 0x00812A30>, <Movie.Movie object at 0x008129F0>, <Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x00812750>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x00812C30>, <Movie.Movie object at 0x00812830>]
+Value to remove: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Removed value: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Remaining list: [<Movie.Movie object at 0x00812930>, <Movie.Movie object at 0x00812A30>, <Movie.Movie object at 0x008129F0>, <Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x00812C30>, <Movie.Movie object at 0x00812830>]
+Expected: [<Movie.Movie object at 0x00812490>, <Movie.Movie object at 0x008124D0>, <Movie.Movie object at 0x00812530>, <Movie.Movie object at 0x00812550>, <Movie.Movie object at 0x00812210>, <Movie.Movie object at 0x00812590>, <Movie.Movie object at 0x008125B0>, <Movie.Movie object at 0x008125F0>, <Movie.Movie object at 0x008121F0>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x00812690>, <Movie.Movie object at 0x00812610>, <Movie.Movie object at 0x008126B0>, <Movie.Movie object at 0x008126D0>, <Movie.Movie object at 0x008126F0>, <Movie.Movie object at 0x00812730>, <Movie.Movie object at 0x00812770>]
+
+Non-empty list, remove from rear
+Initial Contents: [<Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812930>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x008129F0>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812C90>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812C30>, <Movie.Movie object at 0x00812A30>]
+Value to remove: Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genres:   fantasy, action
+Removed value: Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genres:   fantasy, action
+Remaining list: [<Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812930>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x008129F0>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812C30>, <Movie.Movie object at 0x00812A30>]
+Expected: [<Movie.Movie object at 0x00812470>, <Movie.Movie object at 0x00812490>, <Movie.Movie object at 0x008124D0>, <Movie.Movie object at 0x00812530>, <Movie.Movie object at 0x00812550>, <Movie.Movie object at 0x00812210>, <Movie.Movie object at 0x00812590>, <Movie.Movie object at 0x008125B0>, <Movie.Movie object at 0x008125F0>, <Movie.Movie object at 0x008121F0>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x00812690>, <Movie.Movie object at 0x00812610>, <Movie.Movie object at 0x008126B0>, <Movie.Movie object at 0x008126D0>, <Movie.Movie object at 0x008126F0>, <Movie.Movie object at 0x00812730>]
+
+Non-empty list, remove from middle somewhere
+Initial Contents: [<Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x00812A30>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x008129F0>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812930>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x00812710>, <Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x00812C30>, <Movie.Movie object at 0x008129B0>]
+Value to remove: Title:    Omega Man, The
+Year:     1971
+Director: Boris Sagal
+Rating:   6.6
+Genres:   science fiction, action
+Removed value: Title:    Omega Man, The
+Year:     1971
+Director: Boris Sagal
+Rating:   6.6
+Genres:   science fiction, action
+Remaining list: [<Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x00812A30>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x008129F0>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x00812710>, <Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x00812C30>, <Movie.Movie object at 0x008129B0>]
+Expected: [<Movie.Movie object at 0x00812470>, <Movie.Movie object at 0x00812490>, <Movie.Movie object at 0x008124D0>, <Movie.Movie object at 0x00812530>, <Movie.Movie object at 0x00812210>, <Movie.Movie object at 0x00812590>, <Movie.Movie object at 0x008125B0>, <Movie.Movie object at 0x008125F0>, <Movie.Movie object at 0x008121F0>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x00812690>, <Movie.Movie object at 0x00812610>, <Movie.Movie object at 0x008126B0>, <Movie.Movie object at 0x008126D0>, <Movie.Movie object at 0x008126F0>, <Movie.Movie object at 0x00812730>, <Movie.Movie object at 0x00812770>]
+
+
+Testing Sorted_List#remove_front
+
+Empty list
+Initial contents: []
+Cannot remove front of empty list. Assertion thrown successfully.
+List contents after remove: []
+Expected: []
+
+Non-empty list
+Initial contents: [<Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x008127F0>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812A30>, <Movie.Movie object at 0x00812710>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x008129F0>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812910>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812C30>, <Movie.Movie object at 0x008128B0>]
+Value removed: Title:    Alphaville
+Year:     1965
+Director: Jean-Luc Godard
+Rating:   7.1
+Genres:   science fiction, comedy
+List contents after remove: [<Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x008127F0>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812A30>, <Movie.Movie object at 0x00812710>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x008129F0>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812910>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812C30>, <Movie.Movie object at 0x008128B0>]
+Expected: [<Movie.Movie object at 0x00812490>, <Movie.Movie object at 0x008124D0>, <Movie.Movie object at 0x00812530>, <Movie.Movie object at 0x00812550>, <Movie.Movie object at 0x00812210>, <Movie.Movie object at 0x00812590>, <Movie.Movie object at 0x008125B0>, <Movie.Movie object at 0x008125F0>, <Movie.Movie object at 0x008121F0>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x00812690>, <Movie.Movie object at 0x00812610>, <Movie.Movie object at 0x008126B0>, <Movie.Movie object at 0x008126D0>, <Movie.Movie object at 0x008126F0>, <Movie.Movie object at 0x00812730>, <Movie.Movie object at 0x00812770>]
+
+
+Testing Sorted_List#index
+
+Empty list
+List contents: []
+Finding index of Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Index returned: -1
+
+Non-empty list
+List contents: [<Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812710>, <Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x00812910>, <Movie.Movie object at 0x008127F0>, <Movie.Movie object at 0x00812A30>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x00812CB0>, <Movie.Movie object at 0x008129F0>, <Movie.Movie object at 0x00812C30>, <Movie.Movie object at 0x00812A70>]
+Finding index of Title:    Last Man On Earth, The
+Year:     1964
+Director: Ubaldo Ragona
+Rating:   6.9
+Genres:   science fiction
+Index returned: 11
+Expected: 5
+
+
+Testing Sorted_List#find
+
+Empty list
+List contents: []
+Finding Title:    I Am Legend
+Year:     2007
+Director: Francis Lawrence
+Rating:   7.1
+Genres:   science fiction, action
+Value returned: None
+
+Non-empty list, front
+List contents: [<Movie.Movie object at 0x00812B50>, <Movie.Movie object at 0x00812A90>, <Movie.Movie object at 0x00812BD0>, <Movie.Movie object at 0x00812810>, <Movie.Movie object at 0x00812A50>, <Movie.Movie object at 0x00812A10>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00812850>, <Movie.Movie object at 0x00812750>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00812950>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812C50>, <Movie.Movie object at 0x00812670>, <Movie.Movie object at 0x00812C90>, <Movie.Movie object at 0x00812C10>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812AD0>]
+Finding Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Value returned: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+
+Non-empty list, rear
+List contents: [<Movie.Movie object at 0x00812A10>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00812750>, <Movie.Movie object at 0x00812B50>, <Movie.Movie object at 0x00812AD0>, <Movie.Movie object at 0x00812670>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x00812BD0>, <Movie.Movie object at 0x00812C10>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812850>, <Movie.Movie object at 0x00812A50>, <Movie.Movie object at 0x00812C90>, <Movie.Movie object at 0x00812810>, <Movie.Movie object at 0x00812950>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812C50>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812A90>]
+Finding Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genres:   fantasy, action
+Value returned: Title:    Wonder Woman
+Year:     2017
+Director: Patty Jenkins
+Rating:   8.1
+Genres:   fantasy, action
+
+Non-empty list, somewhere in the middle
+List contents: [<Movie.Movie object at 0x00812670>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812C10>, <Movie.Movie object at 0x00812A10>, <Movie.Movie object at 0x00812A90>, <Movie.Movie object at 0x00812950>, <Movie.Movie object at 0x00812A50>, <Movie.Movie object at 0x00812750>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812C90>, <Movie.Movie object at 0x00812BD0>, <Movie.Movie object at 0x00812AD0>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00812B50>, <Movie.Movie object at 0x00812850>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812810>, <Movie.Movie object at 0x00812C50>, <Movie.Movie object at 0x00812790>]
+Finding Title:    Broken Flowers
+Year:     2005
+Director: Jim Jarmusch
+Rating:   7.2
+Genres:   romance, comedy
+Value returned: Title:    Broken Flowers
+Year:     2005
+Director: Jim Jarmusch
+Rating:   7.2
+Genres:   romance, comedy
+
+
+Testing Sorted_List#peek
+
+Empty list
+List contents: []
+Cannot peek at empty list. Assertion thrown successfully.
+
+Non-Empty List
+List contents: [<Movie.Movie object at 0x00812950>, <Movie.Movie object at 0x00812C90>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812670>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00812850>, <Movie.Movie object at 0x00812AD0>, <Movie.Movie object at 0x00812C10>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00812750>, <Movie.Movie object at 0x00812A90>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x00812A10>, <Movie.Movie object at 0x00812BD0>, <Movie.Movie object at 0x00812A50>, <Movie.Movie object at 0x00812C50>, <Movie.Movie object at 0x00812B50>, <Movie.Movie object at 0x00812810>, <Movie.Movie object at 0x00812B10>]
+Value peeked: Title:    Alphaville
+Year:     1965
+Director: Jean-Luc Godard
+Rating:   7.1
+Genres:   science fiction, comedy
+Expected: Title:    Alphaville
+Year:     1965
+Director: Jean-Luc Godard
+Rating:   7.1
+Genres:   science fiction, comedy
+
+
+Testing Sorted_List#count
+
+Empty list
+List contents: []
+To count: Title:    Dellamorte Dellamore
+Year:     1994
+Director: None
+Rating:   None
+Genres:   
+Counted: 0
+Expected: 5
+
+Non-Empty list without key
+List contents: [<Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x00812910>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812CB0>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x008129F0>, <Movie.Movie object at 0x00812CD0>, <Movie.Movie object at 0x00812990>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x008127F0>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812B70>]
+To count: Title:    Dellamorte Dellamore
+Year:     1994
+Director: None
+Rating:   None
+Genres:   
+Counted: 0
+Expected: 0
+
+Non-empty list with key
+List contents: [<Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x00812C10>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00812950>]
+To count: Title:    Dellamorte Dellamore
+Year:     1994
+Director: None
+Rating:   None
+Genres:   
+Counted: 5
+Expected: 5
+
+
+Testing Sorted_List#min
+
+Empty list
+List contents: []
+Cannot find the min of an empty list. Assertion thrown successfully.
+
+Non-empty list
+List contents: [<Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x008129F0>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x00812950>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812990>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x008127F0>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00812CD0>, <Movie.Movie object at 0x00812CB0>, <Movie.Movie object at 0x00812C30>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812C10>]
+Returned min: Title:    Alphaville
+Year:     1965
+Director: Jean-Luc Godard
+Rating:   7.1
+Genres:   science fiction, comedy
+Expected: Title:    Alphaville
+Year:     1965
+Director: Jean-Luc Godard
+Rating:   7.1
+Genres:   science fiction, comedy
+
+Non-empty list with multiple of same min
+List contents: [<Movie.Movie object at 0x00812910>, <Movie.Movie object at 0x00812A90>, <Movie.Movie object at 0x00812AD0>, <Movie.Movie object at 0x00812750>, <Movie.Movie object at 0x008124B0>]
+Returned min: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+
+
+Testing Sorted_List#max
+
+Empty list
+List contents: []
+Cannot find the max of an empty list. Assertion thrown successfully.
+
+Non-empty list
+List contents: [<Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x008127F0>, <Movie.Movie object at 0x00812910>, <Movie.Movie object at 0x008124B0>, <Movie.Movie object at 0x00812CD0>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812AD0>, <Movie.Movie object at 0x00812C30>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812950>, <Movie.Movie object at 0x00812CB0>, <Movie.Movie object at 0x00812750>, <Movie.Movie object at 0x00812870>, <Movie.Movie object at 0x00812990>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x00812A90>]
+Returned max: Title:    Zulu
+Year:     1964
+Director: Cy Endfield
+Rating:   7.8
+Genres:   war
+Expected: Title:    Zulu
+Year:     1964
+Director: Cy Endfield
+Rating:   7.8
+Genres:   war
+
+Non-empty list with multiple of same min
+List contents: [<Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812850>, <Movie.Movie object at 0x008129F0>]
+Returned max: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+
+
+Testing Sorted_List#is_identical
+
+Empty lists
+List 1 contents: []
+List 2 contents: []
+Returned identical: True
+Expected: True
+
+One empty, one non-empty
+List 1 contents: [<Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812B50>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x00812710>, <Movie.Movie object at 0x00812BD0>, <Movie.Movie object at 0x00812C90>, <Movie.Movie object at 0x00812A90>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812C10>, <Movie.Movie object at 0x00812A30>, <Movie.Movie object at 0x00812670>, <Movie.Movie object at 0x00812C50>, <Movie.Movie object at 0x00812910>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812A50>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00812830>]
+List 2 contents: []
+Returned identical: False
+Expected: False
+
+Both non-empty, not identical
+List 1 contents: [<Movie.Movie object at 0x00812BD0>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812B50>, <Movie.Movie object at 0x00812A90>, <Movie.Movie object at 0x00812710>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x00812C90>, <Movie.Movie object at 0x00812AF0>]
+List 2 contents: [<Movie.Movie object at 0x00812C10>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x00812670>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812C50>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812A30>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00812910>, <Movie.Movie object at 0x00812A50>]
+Returned identical: False
+Expected: False
+
+Both non-empty, identical
+List 1 contents: [<Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x00812A50>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812A90>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x008128F0>]
+List 2 contents: [<Movie.Movie object at 0x00812970>, <Movie.Movie object at 0x00812C90>, <Movie.Movie object at 0x00812670>, <Movie.Movie object at 0x00812C10>, <Movie.Movie object at 0x00812A30>, <Movie.Movie object at 0x00812710>, <Movie.Movie object at 0x00812BD0>, <Movie.Movie object at 0x00812910>, <Movie.Movie object at 0x00812B50>, <Movie.Movie object at 0x00812C50>]
+Returned identical: True
+Expected: True
+
+
+Testing Sorted_List#__contains__
+
+Empty list
+List contents: []
+Key: Title:    Dellamorte Dellamore
+Year:     1994
+Director: None
+Rating:   None
+Genres:   
+Contains key: False
+Expected: False
+
+Non-empty list, does not contain
+List contents: [<Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812810>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812E70>, <Movie.Movie object at 0x00812DB0>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812EF0>, <Movie.Movie object at 0x00812DF0>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812EB0>, <Movie.Movie object at 0x00812750>, <Movie.Movie object at 0x00812D70>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812F70>, <Movie.Movie object at 0x00812E30>, <Movie.Movie object at 0x00812F30>, <Movie.Movie object at 0x00812C70>]
+Key: Title:    Dellamorte Dellamore
+Year:     1994
+Director: None
+Rating:   None
+Genres:   
+Contains key: False
+Expected: False
+
+Non-empty list, does  contain
+List contents: [<Movie.Movie object at 0x00812DB0>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00812DF0>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812EB0>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x00812E30>, <Movie.Movie object at 0x00812750>, <Movie.Movie object at 0x00812EF0>, <Movie.Movie object at 0x00812E70>, <Movie.Movie object at 0x00812F70>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812D30>, <Movie.Movie object at 0x00812D70>, <Movie.Movie object at 0x00812F30>, <Movie.Movie object at 0x00812810>]
+Key: Title:    Dellamorte Dellamore
+Year:     1994
+Director: None
+Rating:   None
+Genres:   
+Contains key: True
+Expected: True
+
+
+Testing Sorted_List#__getitem__
+
+Empty list
+List contents: []
+Getting at index: 0
+Invalid index since list empty. Assertion caught successfully.
+
+Non-empty list
+List contents: [<Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812750>, <Movie.Movie object at 0x00812E30>, <Movie.Movie object at 0x00812DB0>, <Movie.Movie object at 0x00812810>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812E70>, <Movie.Movie object at 0x00812DF0>, <Movie.Movie object at 0x00812D30>, <Movie.Movie object at 0x00812F70>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812EF0>, <Movie.Movie object at 0x00812EB0>, <Movie.Movie object at 0x00812F30>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812D70>, <Movie.Movie object at 0x00812790>]
+Getting at index: 0
+Item at index: Title:    Alphaville
+Year:     1965
+Director: Jean-Luc Godard
+Rating:   7.1
+Genres:   science fiction, comedy
+Expected: Title:    Alphaville
+Year:     1965
+Director: Jean-Luc Godard
+Rating:   7.1
+Genres:   science fiction, comedy
+
+Index out of range
+List contents: []
+Getting at index: 0
+Invalid index. Assertion thrown successfully.
+
+
+Testing Sorted_List#clean
+
+Empty list
+List contents: []
+List cleaned
+List contents: []
+Expected: []
+
+Non-empty list, no duplicates
+List contents: [<Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812F70>, <Movie.Movie object at 0x00812D30>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00812EF0>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x00812E30>, <Movie.Movie object at 0x00812F30>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812DF0>, <Movie.Movie object at 0x00812810>, <Movie.Movie object at 0x00812EB0>, <Movie.Movie object at 0x00812DB0>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x00812E70>, <Movie.Movie object at 0x00812D70>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812750>]
+List cleaned
+List contents: [<Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812F70>, <Movie.Movie object at 0x00812D30>, <Movie.Movie object at 0x00812A70>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00812EF0>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x00812E30>, <Movie.Movie object at 0x00812F30>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812DF0>, <Movie.Movie object at 0x00812810>, <Movie.Movie object at 0x00812EB0>, <Movie.Movie object at 0x00812DB0>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x00812E70>, <Movie.Movie object at 0x00812D70>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812750>]
+
+Non-empty list, some duplicates
+List contents: [<Movie.Movie object at 0x00812E30>, <Movie.Movie object at 0x00812810>, <Movie.Movie object at 0x00812DF0>, <Movie.Movie object at 0x00812D30>, <Movie.Movie object at 0x00812F70>, <Movie.Movie object at 0x00812A50>, <Movie.Movie object at 0x00812BB0>, <Movie.Movie object at 0x00812D70>, <Movie.Movie object at 0x00812DB0>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812EF0>, <Movie.Movie object at 0x00812EB0>, <Movie.Movie object at 0x00812F30>, <Movie.Movie object at 0x00827070>, <Movie.Movie object at 0x00812E70>, <Movie.Movie object at 0x00827030>, <Movie.Movie object at 0x00812A70>]
+List cleaned
+List contents: [<Movie.Movie object at 0x00812E30>, <Movie.Movie object at 0x00812810>, <Movie.Movie object at 0x00812DF0>, <Movie.Movie object at 0x00812D30>, <Movie.Movie object at 0x00812F70>, <Movie.Movie object at 0x00812D70>, <Movie.Movie object at 0x00812DB0>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x008128F0>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x008129B0>, <Movie.Movie object at 0x00812C70>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812EF0>, <Movie.Movie object at 0x00812EB0>, <Movie.Movie object at 0x00812F30>, <Movie.Movie object at 0x00827070>, <Movie.Movie object at 0x00812E70>, <Movie.Movie object at 0x00827030>, <Movie.Movie object at 0x00812A70>]
+Expected: [<Movie.Movie object at 0x00812470>, <Movie.Movie object at 0x00812490>, <Movie.Movie object at 0x008124D0>, <Movie.Movie object at 0x00812530>, <Movie.Movie object at 0x00812550>, <Movie.Movie object at 0x00812210>, <Movie.Movie object at 0x00812590>, <Movie.Movie object at 0x008125B0>, <Movie.Movie object at 0x008125F0>, <Movie.Movie object at 0x008121F0>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x00812690>, <Movie.Movie object at 0x00812610>, <Movie.Movie object at 0x008126B0>, <Movie.Movie object at 0x008126D0>, <Movie.Movie object at 0x008126F0>, <Movie.Movie object at 0x00812730>, <Movie.Movie object at 0x00812770>]
+
+Non-empty list, all duplicates
+List contents: [<Movie.Movie object at 0x00812B30>, <Movie.Movie object at 0x00812DD0>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812E10>, <Movie.Movie object at 0x00812A90>]
+List cleaned
+List contents: [<Movie.Movie object at 0x00812B30>]
+Expected: Title:    Dellamorte Dellamore
+Year:     1994
+Director: Michele Soavi
+Rating:   7.2
+Genres:   romance, comedy, zombie, horror
+
+
+Testing Sorted_List#intersection
+
+Empty lists
+List 1 contents: []
+List 2 contents: []
+Target contents: []
+Expected: []
+
+One empty list
+List 1 contents: [<Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00812ED0>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812D30>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812FB0>, <Movie.Movie object at 0x00812F10>, <Movie.Movie object at 0x00812D90>, <Movie.Movie object at 0x00827070>, <Movie.Movie object at 0x00812E50>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812D10>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812E90>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x008270D0>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00827090>, <Movie.Movie object at 0x008127F0>]
+List 2 contents: []
+Target contents: []
+Expected: []
+
+Both non-empty, no values shared
+List 1 contents: [<Movie.Movie object at 0x00812FB0>, <Movie.Movie object at 0x00812E50>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x008127F0>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812D90>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812D30>, <Movie.Movie object at 0x00812F10>, <Movie.Movie object at 0x00812ED0>]
+List 2 contents: [<Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00829050>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812D10>, <Movie.Movie object at 0x008290D0>, <Movie.Movie object at 0x00812E90>, <Movie.Movie object at 0x00829090>]
+Target contents: []
+Expected: []
+
+Both non-empty, some values shared
+List 1 contents: [<Movie.Movie object at 0x00812D90>, <Movie.Movie object at 0x008290F0>, <Movie.Movie object at 0x00812F10>, <Movie.Movie object at 0x00812FB0>, <Movie.Movie object at 0x00812ED0>, <Movie.Movie object at 0x00829190>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00812D30>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x008127F0>, <Movie.Movie object at 0x00829150>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812E50>]
+List 2 contents: [<Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812D10>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00829090>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812E90>, <Movie.Movie object at 0x00812AB0>, <Movie.Movie object at 0x008290D0>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00829050>]
+Target contents: [<Movie.Movie object at 0x008291B0>, <Movie.Movie object at 0x00829230>, <Movie.Movie object at 0x00829270>]
+Expected: [<Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x008125D0>]
+
+Both non-empty, all values shared
+List 1 contents: [<Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x008290F0>, <Movie.Movie object at 0x00829090>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00829450>, <Movie.Movie object at 0x008292D0>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00829550>, <Movie.Movie object at 0x00829350>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812FB0>, <Movie.Movie object at 0x008294D0>, <Movie.Movie object at 0x00812D90>, <Movie.Movie object at 0x00829150>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00829650>, <Movie.Movie object at 0x008293D0>, <Movie.Movie object at 0x008295D0>, <Movie.Movie object at 0x00812E90>]
+List 2 contents: [<Movie.Movie object at 0x00812D30>, <Movie.Movie object at 0x00829190>, <Movie.Movie object at 0x008290D0>, <Movie.Movie object at 0x008128B0>, <Movie.Movie object at 0x00812D10>, <Movie.Movie object at 0x00829490>, <Movie.Movie object at 0x00829310>, <Movie.Movie object at 0x00812E50>, <Movie.Movie object at 0x00829590>, <Movie.Movie object at 0x00829390>, <Movie.Movie object at 0x00829050>, <Movie.Movie object at 0x00812ED0>, <Movie.Movie object at 0x00829510>, <Movie.Movie object at 0x00812F10>, <Movie.Movie object at 0x00829250>, <Movie.Movie object at 0x008127F0>, <Movie.Movie object at 0x00829690>, <Movie.Movie object at 0x00829410>, <Movie.Movie object at 0x00829610>, <Movie.Movie object at 0x00812AB0>]
+Target contents: [<Movie.Movie object at 0x00812E30>, <Movie.Movie object at 0x00829210>, <Movie.Movie object at 0x008296B0>, <Movie.Movie object at 0x008296F0>, <Movie.Movie object at 0x00829730>, <Movie.Movie object at 0x00829770>, <Movie.Movie object at 0x008297B0>, <Movie.Movie object at 0x008297F0>, <Movie.Movie object at 0x00829830>, <Movie.Movie object at 0x00829870>, <Movie.Movie object at 0x008298B0>, <Movie.Movie object at 0x008298F0>, <Movie.Movie object at 0x00829930>, <Movie.Movie object at 0x00829970>, <Movie.Movie object at 0x008299B0>, <Movie.Movie object at 0x008299F0>, <Movie.Movie object at 0x00829A30>, <Movie.Movie object at 0x00829A70>, <Movie.Movie object at 0x00829890>, <Movie.Movie object at 0x00829AF0>]
+Expected: [<Movie.Movie object at 0x00812470>, <Movie.Movie object at 0x00812490>, <Movie.Movie object at 0x008124D0>, <Movie.Movie object at 0x00812530>, <Movie.Movie object at 0x00812550>, <Movie.Movie object at 0x00812210>, <Movie.Movie object at 0x00812590>, <Movie.Movie object at 0x008125B0>, <Movie.Movie object at 0x008125F0>, <Movie.Movie object at 0x008121F0>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x00812690>, <Movie.Movie object at 0x00812610>, <Movie.Movie object at 0x008126B0>, <Movie.Movie object at 0x008126D0>, <Movie.Movie object at 0x008126F0>, <Movie.Movie object at 0x00812730>, <Movie.Movie object at 0x00812770>]
+
+
+Testing Sorted_List#union
+
+Empty lists
+List 1 contents: []
+List 2 contents: []
+Target contents: []
+Expected: []
+
+One empty list
+List 1 contents: [<Movie.Movie object at 0x00812EB0>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00812F50>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x00812D90>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00829A90>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812E90>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812F30>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812F70>, <Movie.Movie object at 0x00829230>, <Movie.Movie object at 0x00812FB0>, <Movie.Movie object at 0x008291B0>, <Movie.Movie object at 0x00812DB0>]
+List 2 contents: []
+Target contents: []
+Expected: [<Movie.Movie object at 0x00812470>, <Movie.Movie object at 0x00812490>, <Movie.Movie object at 0x008124D0>, <Movie.Movie object at 0x00812530>, <Movie.Movie object at 0x00812550>, <Movie.Movie object at 0x00812210>, <Movie.Movie object at 0x00812590>, <Movie.Movie object at 0x008125B0>, <Movie.Movie object at 0x008125F0>, <Movie.Movie object at 0x008121F0>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x00812690>, <Movie.Movie object at 0x00812610>, <Movie.Movie object at 0x008126B0>, <Movie.Movie object at 0x008126D0>, <Movie.Movie object at 0x008126F0>, <Movie.Movie object at 0x00812730>, <Movie.Movie object at 0x00812770>]
+
+Both non-empty, no values shared
+List 1 contents: [<Movie.Movie object at 0x00812D90>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00812EB0>, <Movie.Movie object at 0x00812DB0>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x00812F50>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812B10>]
+List 2 contents: [<Movie.Movie object at 0x00812E90>, <Movie.Movie object at 0x00812F70>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00829A90>, <Movie.Movie object at 0x00812F30>, <Movie.Movie object at 0x00812FB0>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x008291B0>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00829230>]
+Target contents: []
+Expected: [<Movie.Movie object at 0x00812470>, <Movie.Movie object at 0x00812490>, <Movie.Movie object at 0x008124D0>, <Movie.Movie object at 0x00812530>, <Movie.Movie object at 0x00812550>, <Movie.Movie object at 0x00812210>, <Movie.Movie object at 0x00812590>, <Movie.Movie object at 0x008125B0>, <Movie.Movie object at 0x008125F0>, <Movie.Movie object at 0x008121F0>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x00812690>, <Movie.Movie object at 0x00812610>, <Movie.Movie object at 0x008126B0>, <Movie.Movie object at 0x008126D0>, <Movie.Movie object at 0x008126F0>, <Movie.Movie object at 0x00812730>, <Movie.Movie object at 0x00812770>]
+
+Both non-empty, some values shared
+List 1 contents: [<Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x008296D0>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00812D90>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00829750>, <Movie.Movie object at 0x00812EB0>, <Movie.Movie object at 0x00812F50>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00812DB0>, <Movie.Movie object at 0x00829710>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x00812830>]
+List 2 contents: [<Movie.Movie object at 0x00812E90>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00829230>, <Movie.Movie object at 0x00812F30>, <Movie.Movie object at 0x00812B70>, <Movie.Movie object at 0x00812F70>, <Movie.Movie object at 0x008291B0>, <Movie.Movie object at 0x00812FB0>, <Movie.Movie object at 0x00829A90>]
+Target contents: [<Movie.Movie object at 0x00829770>, <Movie.Movie object at 0x008297F0>, <Movie.Movie object at 0x00829830>]
+Expected: [<Movie.Movie object at 0x00812590>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x008121F0>, <Movie.Movie object at 0x00812490>, <Movie.Movie object at 0x00812470>, <Movie.Movie object at 0x008126B0>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x00812530>, <Movie.Movie object at 0x008126F0>, <Movie.Movie object at 0x00812690>, <Movie.Movie object at 0x008125F0>, <Movie.Movie object at 0x00812210>, <Movie.Movie object at 0x008126D0>, <Movie.Movie object at 0x00812550>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x008125B0>, <Movie.Movie object at 0x00812770>, <Movie.Movie object at 0x00812610>, <Movie.Movie object at 0x00812730>, <Movie.Movie object at 0x008124D0>]
+
+Both non-empty, all values shared
+List 1 contents: [<Movie.Movie object at 0x00812EB0>, <Movie.Movie object at 0x008296D0>, <Movie.Movie object at 0x00829230>, <Movie.Movie object at 0x00812BF0>, <Movie.Movie object at 0x00812E90>, <Movie.Movie object at 0x00829A10>, <Movie.Movie object at 0x00829270>, <Movie.Movie object at 0x00812FB0>, <Movie.Movie object at 0x008290B0>, <Movie.Movie object at 0x00829910>, <Movie.Movie object at 0x00812890>, <Movie.Movie object at 0x00812D90>, <Movie.Movie object at 0x00829AB0>, <Movie.Movie object at 0x00812790>, <Movie.Movie object at 0x00829710>, <Movie.Movie object at 0x00812B90>, <Movie.Movie object at 0x00829370>, <Movie.Movie object at 0x00829990>, <Movie.Movie object at 0x008292F0>, <Movie.Movie object at 0x00812B70>]
+List 2 contents: [<Movie.Movie object at 0x00812F50>, <Movie.Movie object at 0x00829750>, <Movie.Movie object at 0x008291B0>, <Movie.Movie object at 0x00812F30>, <Movie.Movie object at 0x008129D0>, <Movie.Movie object at 0x00829A50>, <Movie.Movie object at 0x008298D0>, <Movie.Movie object at 0x00812830>, <Movie.Movie object at 0x00829470>, <Movie.Movie object at 0x00829950>, <Movie.Movie object at 0x00829A90>, <Movie.Movie object at 0x00812B10>, <Movie.Movie object at 0x00829170>, <Movie.Movie object at 0x00812AF0>, <Movie.Movie object at 0x00829810>, <Movie.Movie object at 0x00812DB0>, <Movie.Movie object at 0x00829030>, <Movie.Movie object at 0x008299D0>, <Movie.Movie object at 0x00829570>, <Movie.Movie object at 0x00812F70>]
+Target contents: [<Movie.Movie object at 0x00812E30>, <Movie.Movie object at 0x008297D0>, <Movie.Movie object at 0x00829050>, <Movie.Movie object at 0x00829510>, <Movie.Movie object at 0x00829250>, <Movie.Movie object at 0x00829690>, <Movie.Movie object at 0x00829410>, <Movie.Movie object at 0x00829610>, <Movie.Movie object at 0x00829110>, <Movie.Movie object at 0x00829070>, <Movie.Movie object at 0x00829430>, <Movie.Movie object at 0x008292B0>, <Movie.Movie object at 0x00829530>, <Movie.Movie object at 0x00829330>, <Movie.Movie object at 0x008294B0>, <Movie.Movie object at 0x00829130>, <Movie.Movie object at 0x00829630>, <Movie.Movie object at 0x008293B0>, <Movie.Movie object at 0x00829090>, <Movie.Movie object at 0x00829AD0>]
+Expected: [<Movie.Movie object at 0x00812590>, <Movie.Movie object at 0x00812590>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x00812630>, <Movie.Movie object at 0x008121F0>, <Movie.Movie object at 0x008121F0>, <Movie.Movie object at 0x00812490>, <Movie.Movie object at 0x00812490>, <Movie.Movie object at 0x00812470>, <Movie.Movie object at 0x00812470>, <Movie.Movie object at 0x008126B0>, <Movie.Movie object at 0x008126B0>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x008125D0>, <Movie.Movie object at 0x00812530>, <Movie.Movie object at 0x00812530>, <Movie.Movie object at 0x008126F0>, <Movie.Movie object at 0x008126F0>, <Movie.Movie object at 0x00812690>, <Movie.Movie object at 0x00812690>, <Movie.Movie object at 0x008125F0>, <Movie.Movie object at 0x008125F0>, <Movie.Movie object at 0x00812210>, <Movie.Movie object at 0x00812210>, <Movie.Movie object at 0x008126D0>, <Movie.Movie object at 0x008126D0>, <Movie.Movie object at 0x00812550>, <Movie.Movie object at 0x00812550>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x00812650>, <Movie.Movie object at 0x008125B0>, <Movie.Movie object at 0x008125B0>, <Movie.Movie object at 0x00812770>, <Movie.Movie object at 0x00812770>, <Movie.Movie object at 0x00812610>, <Movie.Movie object at 0x00812610>, <Movie.Movie object at 0x00812730>, <Movie.Movie object at 0x00812730>, <Movie.Movie object at 0x008124D0>, <Movie.Movie object at 0x008124D0>]
+
+-------------------------------------------------------
