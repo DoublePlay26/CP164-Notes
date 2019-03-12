@@ -1,0 +1,368 @@
+
+-------------------------------------------------------
+LabAssignment  Testing
+-------------------------------------------------------
+Author  Nicolas Mills
+ID      180856100
+Email   mill6100@mylaurier.ca
+Version 2019-03-11
+-------------------------------------------------------
+
+-------------------------------------------------------
+Task 1
+-------------------------------------------------------
+Testing Queue#combine
+
+Empty Queues
+Source1 Contents: []
+Source2 Contents: []
+Combined Queues
+Target Contents: []
+Expected: []
+
+Source1 empty
+Source1 Contents: []
+Source2 Contents: [1, 2, 3, 4]
+Combined Queues
+Target Contents: [1, 2, 3, 4]
+Expected: [1, 2, 3, 4]
+
+Source2 empty
+Source1 Contents: [1, 2, 3, 4]
+Source2 Contents: []
+Combined Queues
+Target Contents: [1, 2, 3, 4]
+Expected: [1, 2, 3, 4]
+
+Both Queues non-empty
+Source1 Contents: [1, 2, 3, 4]
+Source2 Contents: [5, 6, 7, 8]
+Combined Queues
+Target Contents: [1, 5, 2, 6, 3, 7, 4, 8]
+Expected: [1, 5, 2, 6, 3, 7, 4, 8]
+
+-------------------------------------------------------
+Task 2
+-------------------------------------------------------
+Testing PQ#combine
+
+Empty Queues
+Source1 Contents: []
+Source2 Contents: []
+Target Contents: []
+Expected: []
+
+Source1 Empty
+Source1 Contents: []
+Source2 Contents: [1, 2, 3, 4]
+Target Contents: [1, 2, 3, 4]
+Expected: []
+
+Source2 Empty
+Source1 Contents: [1, 2, 3, 4]
+Source2 Contents: []
+Target Contents: [1, 2, 3, 4]
+Expected: []
+
+Both PQ's non-empty
+Source1 Contents: [1, 2, 3, 4]
+Source2 Contents: [5, 6, 7, 8]
+Target Contents: [1, 5, 2, 6, 3, 7, 4, 8]
+Expected: [1, 5, 2, 6, 3, 7, 4, 8]
+
+
+Testing PQ#insert
+
+Empty initial PQ
+PQ Contents: []
+Value to insert: 5
+Inserted
+New PQ Contents: [5]
+Expected: [5]
+
+Non-empty initial PQ
+PQ Contents: [1, 2, 3, 4]
+Value to insert: 6
+Inserted
+New PQ Contents: [1, 2, 3, 4, 6]
+Expected: [1, 2, 3, 4, 6]
+
+
+Testing PQ#is_empty
+
+Empty PQ
+PQ Contents: []
+PQ empty? Got: True
+Expected: True
+
+Non-empty PQ
+PQ Contents: [1, 2, 3, 4]
+PQ empty? Got: False
+Expected: False
+
+
+Testing PQ#__len__
+
+Empty PQ
+PQ Contents: []
+Length of PQ: 0
+Expected: 0
+
+PQ with ONE element
+PQ Contents: [0]
+Length of PQ: 1
+Expected: 1
+
+PQ with MORE THAN ONE element
+PQ Contents: [1, 2, 3, 4]
+Length of PQ: 4
+Expected: 4
+
+
+Testing PQ#peek
+
+Empty PQ
+PQ Contents: []
+Unable to peek empty PQ. Assertion thrown correctly
+
+PQ with ONE element
+PQ Contents: [3]
+Front value returned: 3
+Expected: 3
+
+PQ with MORE THAN ONE element
+PQ Contents: [0, 1, 2, 3, 4]
+Front value returned: 0
+Expected: 0
+
+
+Testing PQ#remove
+
+Empty PQ
+PQ Contents: []
+Unable to remove from an empty PQ. Assertion thrown correctly
+
+PQ with ONE element
+PQ Contents: [3]
+Removed value: 3
+Expected: 3
+
+PQ with MORE THAN ONE element
+PQ Contents: [1, 2, 3, 4]
+Removed value: 1
+Expected: 1
+
+
+Testing PQ#split_alt
+
+Empty PQ
+PQ Contents: []
+Target1 Contents: []
+Expected: []
+Target2 Contents: []
+Expected: []
+
+PQ with ONE element
+PQ Contents: [4]
+Target1 Contents: [4]
+Expected: [4]
+Target2 Contents: []
+Expected: []
+Original PQ Contents: []
+
+PQ with MORE THAN ONE element
+PQ Contents: [1, 2, 3, 4]
+Target1 Contents: [1, 3]
+Expected: [1, 3]
+Target2 Contents: [2, 4]
+Expected: [2, 4]
+Original PQ Contents: []
+
+
+Testing PQ#split_key
+
+Empty PQ
+PQ Contents: []
+Key to split on: 1
+Target1 Contents: []
+Expected: []
+Target2 Contents: []
+Expected: []
+Original PQ Contents: []
+
+PQ with ONE element, key priority equal
+PQ Contents: [1]
+Key to split on: 1
+Target1 Contents: []
+Expected: []
+Target2 Contents: [1]
+Expected: [1]
+Original PQ Contents: []
+
+PQ with ONE element, key priority lower
+PQ Contents: [2]
+Key to split on: 1
+Target1 Contents: []
+Expected: []
+Target2 Contents: [2]
+Expected: [2]
+Original PQ Contents: []
+
+PQ with MORE THAN ONE element
+PQ Contents: [1, 2, 3, 4]
+Key to split on: 3
+Target1 Contents: [1, 2]
+Expected: [1, 2]
+Target2 Contents: [3, 4]
+Expected: [3, 4]
+Original PQ Contents: []
+
+-------------------------------------------------------
+Task 3
+------------------Testing Deque#insert_front
+
+Empty intial Deque
+Deque Contents: []
+Inserting 3 at front
+Inserted
+Deque Contents: [3]
+Expected: [3]
+
+Non-empty intial Deque
+Deque Contents: [4, 3, 2, 1]
+Inserting 3 at front
+Inserted
+Deque Contents: [3, 4, 3, 2, 1]
+Expected: [3, 4, 3, 2, 1]
+
+
+Testing Deque#insert_rear
+
+Empty Initial Deque
+Deque Contents: []
+Inserting 3 at rear
+Inserted
+Deque Contents: [3]
+Expected: [3]
+
+Non-empty intial Deque
+Deque Contents: [1, 2, 3, 4]
+Inserting 3 at rear
+Inserted
+Deque Contents: [1, 2, 3, 4, 3]
+Expected: [1, 2, 3, 4, 3]
+
+
+Testing Deque#is_empty
+
+Empty Deque
+Deque Contents: []
+Empty? True
+Expecting: True
+
+Non-empty Deque
+Deque Contents: [1, 2, 3, 4]
+Empty? False
+Expecting: False
+
+
+Testing Deque#__len__
+
+Empty Deque
+Deque Contents: []
+Returned length of Deque: 0
+Expected: 0
+
+Non-empty Deque with ONE element
+Deque Contents: [5]
+Returned length of Deque: 1
+Expected: 1
+
+Non-empty Deque with MORE THAN ONE element
+Deque Contents: [1, 2, 3, 4]
+Returned length of Deque: 4
+Expected: 4
+
+
+Testing Deque#peek_front
+
+Empty Deque
+Deque Contents: []
+Cannot peek front of empty Deque. Assertion thrown successfully.
+
+Non-empty Deque
+Deque Contents: [1, 2, 3, 4]
+Peeked front: 1
+Expected: 1
+
+
+Testing Deque#peek_rear
+
+Empty Deque
+Deque Contents: []
+Cannot peek rear of empty Deque. Assertion thrown successfully.
+
+Non-empty Deque
+Deque Contents: [4, 3, 2, 1]
+Peeked rear: 1
+Expected: 1
+
+
+Testing Deque#remove_front
+
+Empty Deque
+Deque Contents: []
+Cannot remove front of empty Deque. Assertion thrown successfully.
+
+Non-empty Deque
+Deque Contents: [1, 2, 3, 4]
+Removed front: 1
+Expected: 1
+
+
+Testing Deque#remove_rear
+
+Empty Deque
+Deque Contents: []
+Cannot remove rear of empty Deque. Assertion thrown successfully.
+
+Non-empty Deque
+Deque Contents: [4, 3, 2, 1]
+Removed front: 1
+Expected: 1
+
+
+Testing Deque#swap
+
+Empty Deque
+Deque Contents: []
+l: 0	r: 0
+Deque Contents: []
+
+Deque with ONE element
+Deque Contents: [1]
+l: 0	r: 0
+Deque Contents: [1]
+
+Deque with MORE THAN ONE element
+Deque Contents: [1, 2, 3, 4]
+l: 0	r: -1
+Deque Contents: [4, 2, 3, 1]
+
+Deque with MORE THAN ONE element, l < r
+Deque Contents: [1, 2, 3, 4]
+l: -1	r: 0
+Deque Contents: [4, 2, 3, 1]
+
+Deque with MORE THAN ONE element, l and r not front or rear
+Deque Contents: [1, 2, 3, 4]
+l: 1	r: 2
+Deque Contents: [1, 3, 2, 4]
+
+Deque with MORE THAN ONE element
+Deque Contents: [1, 2, 3, 4]
+l: 2	r: 1
+Deque Contents: [1, 3, 2, 4]
+-------------------------------------
+
+-------------------------------------------------------

@@ -209,8 +209,16 @@ class Priority_Queue:
         """
 
         # Your code here
-
-        return
+        target1 = Priority_Queue()
+        target2 = Priority_Queue()
+        
+        while self._front is not None:
+            # Higher priority
+            if self._front._value < key:
+                target1._move_front_to_rear(self)
+            else:
+                target2._move_front_to_rear(self)
+        return target1, target2
 
     def combine(self, source1, source2):
         """
@@ -232,7 +240,91 @@ class Priority_Queue:
         """
 
         # Your code here
-
+        
+        # Used if one of the PQs are empty
+        main_node = None
+        
+        if source1._front is None and source2._front is not None:
+            # Source1 empty, only use source2
+            new_node = _PQ_Node(source2._front._value, None)
+            if self._rear is None:
+                self._rear = new_node
+                self._front = new_node
+            else:
+                self._rear._next = new_node
+                self._rear = new_node
+            self._count += 1
+            source2._front = source2._front._next
+            source2._count -= 1
+            main_node = source2
+        elif source2._front is None and source1._front is not None:
+            # Source2 empty, only use source1
+            new_node = _PQ_Node(source1._front._value, None)
+            if self._rear is None:
+                self._rear = new_node
+                self._front = new_node
+            else:
+                self._rear._next = new_node
+                self._rear = new_node
+            self._count += 1
+            source1._front = source1._front._next
+            source1._count -= 1
+            main_node = source1
+        elif source1._front is not None and source2._front is not None:
+            # Both have nodes, start interlacing
+            new_node = _PQ_Node(source1._front._value, None)
+            if self._rear is None:
+                self._rear = new_node
+                self._front = new_node
+            else:
+                self._rear._next = new_node
+                self._rear = new_node
+            self._count += 1
+            source1._front = source1._front._next
+            source1._count -= 1
+            
+            new_node = _PQ_Node(source2._front._value, None)
+            self._rear._next = new_node
+            self._rear = new_node
+            self._count += 1
+            source2._front = source2._front._next
+            source2._count -= 1
+        
+        # Both sources are non-empty
+        if main_node is None:
+            source1_node = source1._front
+            source2_node = source2._front
+            
+            while source1_node is not None:
+                self._rear._next = source1_node
+                self._rear = source1_node
+                self._count += 1
+                source1_node = source1_node._next
+                source1._front = source1._front._next
+                source1._count -= 1
+                if source2_node is not None:
+                    self._rear._next = source2_node
+                    self._rear = source2_node
+                    self._count += 1
+                    source2_node = source2_node._next
+                    source2._front = source2._front._next
+                    source2._count -= 1
+        else:
+            # One source doesn't have nodes, use main_node
+            current = main_node._front
+            while current is not None:
+                self._rear._next = current
+                self._rear = current
+                self._count += 1
+                current = current._next
+                main_node._front = main_node._front._next
+                main_node._count -= 1
+        if source1._count == 0:
+            source1._front = None
+            source1._rear = None
+        if source2._count == 0:
+            source2._front = None
+            source2._rear = None
         return
 
     def _append_queue(self, source):
@@ -252,7 +344,21 @@ class Priority_Queue:
 
 
         # Your code here
-
+        new_node = _PQ_Node(source._front._value, None)
+        if self._rear is None:
+            self._rear = new_node
+            self._front = new_node
+        else:
+            self._rear._next = new_node
+            self._rear = new_node
+        self._count += 1
+        source._front = source._front._next
+        current = source._front
+        while current is not None:
+            new_node = _PQ_Node(current._value, None)
+            self._rear._next = new_node
+            self._rear = new_node
+            source._front = source._front._next
         return
 
     def _move_front_to_rear(self, source):
@@ -271,8 +377,23 @@ class Priority_Queue:
         """
         assert source._front is not None, "Cannot move the front of an empty priority queue"
 
-
         # Your code here
+        new_node = _PQ_Node(source._front._value, None)
+        if self._rear is None:
+            # First element of this PQ
+            self._rear = new_node
+            self._front = new_node
+        else:
+            # Just add to the rear of this PQ
+            self._rear._next = new_node
+            self._rear = new_node
+        self._count += 1
+        source._front = source._front._next
+        source._count -= 1
+        # Check if source is empty
+        if source._count == 0:
+            source._front = None
+            source._rear = None
 
         return
 
