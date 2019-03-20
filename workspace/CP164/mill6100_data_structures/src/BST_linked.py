@@ -295,7 +295,6 @@ class BST:
         
         return self.retrieve(key) is not None
 
-
     def height(self):
         """
         -------------------------------------------------------
@@ -309,7 +308,25 @@ class BST:
         """
 
         # your code here
+        return self._height_aux(self._root, 0)
 
+    def _height_aux(self, node, height):
+        """
+        """
+        # Base case: Node does not exist
+        if node is None:
+            left_height = 0
+            right_height = 0
+            _height = 0
+        else:
+            _height = 1
+            # General case: Check height of left subtree
+            left_height = 1 + self._height_aux(node._left, _height)
+            # General case: Check height of right subtree
+            right_height = 1 + self._height_aux(node._right, _height)
+        # Height of the tree is the max of the height of the root's 
+        # left and right subtrees
+        return max(left_height, right_height)
 
     def is_identical(self, other):
         """
@@ -345,7 +362,6 @@ class BST:
 
 
         # your code here
-
 
     def parent_r(self, key):
         """
@@ -528,8 +544,41 @@ class BST:
         """
 
         # your code here
+        balanced, _ = self._is_balanced_aux(self._root, 0)
+        return balanced
 
-
+    def _is_balanced_aux(self, root, height):
+        """
+        ---------------------------------------------------------
+        Returns whether a bst is balanced, i.e. the difference in
+        height between all the bst's node's left and right subtrees is <= 1.
+        Private helper function for use with is_balanced
+        ---------------------------------------------------------
+        Returns:
+            balanced - True if the bst is balanced, False otherwise (boolean)
+            _height - The height of the tree (int)
+        ---------------------------------------------------------
+        """
+        # Base case: Node does not exist
+        if root is None:
+            balanced = True
+            _height = 1 + height
+        else:
+            # General case: Node exists
+            _height = 0
+            # Check if left subtree is balanced
+            _, left_height = self._is_balanced_aux(root._left, _height)
+            # Check if right subtree is balanced
+            _, right_height = self._is_balanced_aux(root._right, _height)
+            
+            # Height of subtree is max b/w its left and right subtree, 
+            # +1 to count for the root node
+            _height = 1 + max(left_height, right_height)
+            
+            balanced = abs(left_height - right_height) <= 1
+            
+        return balanced, _height
+        
     def _node_height(self, node):
         """
         ---------------------------------------------------------
@@ -594,7 +643,32 @@ class BST:
         """
 
         # your code here
-
+        return self._is_valid_aux(self._root)
+    
+    def _is_valid_aux(self, node):
+        """
+        ---------------------------------------------------------
+        Determines if a tree is a valid BST, i.e. the values in all left nodes
+        are smaller than their parent, and the values in all right nodes are
+        larger than their parent, and height of any node is 1 + max height of
+        its children. Private helper function used only by is_valid
+        ---------------------------------------------------------
+        Returns:
+            valid - True if tree is a BST, False otherwise (boolean)
+        ---------------------------------------------------------
+        """
+        # Base case: Node does not exist
+        if node is None:
+            valid = True
+        else:
+            if node._left is not None and node._left._value > node._value:
+                valid = False
+            elif node._right is not None and node._right._value < node._value:
+                valid = False
+            else:
+                self._is_valid_aux(node._left)
+                self._is_valid_aux(node._right)
+        return valid
 
     def update(self, value, update):
         """

@@ -13,12 +13,17 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="hr_movies" key="selection"/>
+		<item value="union" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="union"/>
+			<item value="_Queue_N"/>
+			<item value="_Queue"/>
+			<item value="combine"/>
+			<item value="__contains"/>
 			<item value="movies"/>
 			<item value="Testing"/>
 			<item value="append"/>
@@ -43,7 +48,7 @@
 		<item value="277" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="370" key="DIALOG_HEIGHT"/>
-		<item value="525" key="DIALOG_X_ORIGIN"/>
-		<item value="193" key="DIALOG_Y_ORIGIN"/>
+		<item value="828" key="DIALOG_X_ORIGIN"/>
+		<item value="191" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

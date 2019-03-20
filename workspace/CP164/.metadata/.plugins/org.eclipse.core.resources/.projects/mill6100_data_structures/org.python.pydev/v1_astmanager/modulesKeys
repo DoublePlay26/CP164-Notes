@@ -2,6 +2,7 @@ MODULES_MANAGER_V2
 BST_linked|C:\Users\USER 1\Documents\Laurier\Year_One\Sem_Two\CP164\workspace\CP164\mill6100_data_structures\src\BST_linked.py
 Deque_linked|C:\Users\USER 1\Documents\Laurier\Year_One\Sem_Two\CP164\workspace\CP164\mill6100_data_structures\src\Deque_linked.py
 Graph|C:\Users\USER 1\Documents\Laurier\Year_One\Sem_Two\CP164\workspace\CP164\mill6100_data_structures\src\Graph.py
+Hash_Set_array|C:\Users\USER 1\Documents\Laurier\Year_One\Sem_Two\CP164\workspace\CP164\mill6100_data_structures\src\Hash_Set_array.py
 List_array|C:\Users\USER 1\Documents\Laurier\Year_One\Sem_Two\CP164\workspace\CP164\mill6100_data_structures\src\List_array.py
 List_linked|C:\Users\USER 1\Documents\Laurier\Year_One\Sem_Two\CP164\workspace\CP164\mill6100_data_structures\src\List_linked.py
 Movie|C:\Users\USER 1\Documents\Laurier\Year_One\Sem_Two\CP164\workspace\CP164\mill6100_data_structures\src\Movie.py

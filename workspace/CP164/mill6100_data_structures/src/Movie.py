@@ -72,11 +72,15 @@ class Movie:
         # Generate the list of genres as a string.
         genres_list = self.genres_string()
 
-        string = """Title:    {}
-Year:     {}
-Director: {}
-Rating:   {}
-Genres:   {}""".format(self.title, self.year, self.director, self.rating, genres_list)
+        if self.director is None or \
+        self.rating is None or self.genres is None:
+            string = "{}, {}".format(self.title, self.year)
+        else:
+            string = """Title:    {}
+    Year:     {}
+    Director: {}
+    Rating:   {}
+    Genres:   {}""".format(self.title, self.year, self.director, self.rating, genres_list)
         return string
 
     def __eq__(self, other):
@@ -214,6 +218,7 @@ Genres:   {}""".format(self.title, self.year, self.director, self.rating, genres
         Use: h = hash(movie)
         -------------------------------------------------------
         Returns:
+            returns
             value - the total of the characters in the name string
                 multiplied by the year (int > 0)
         -------------------------------------------------------
