@@ -27,7 +27,7 @@ Hash     Slot Key
     -------------------------------------------------------
     """
     # Set up table headers
-    print("""{}     {} {}""".format("Hash", "Slot", "Key"))
+    print("{}     {} {}".format("Hash", "Slot", "Key"))
     print("-"*8,end=' ')
     print("-"*4, end=' ')
     print("-"*20)

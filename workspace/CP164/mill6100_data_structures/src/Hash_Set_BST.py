@@ -11,9 +11,9 @@ __updated__ = "2019-02-18"
 """
 # Imports
 # Use any appropriate data structure here.
-from List_array import List
+from BST_linked import BST
 # Define the new_slot slot creation function.
-new_slot = List
+new_slot = BST
 
 # Constants
 SEP = '-' * 40
@@ -139,7 +139,7 @@ class Hash_Set:
             inserted = False
         else:
             # Value does not exist in the HS, insert into appropriate slot
-            slot.insert(0, value)
+            slot.insert(value)
             inserted = True
             self._count += 1
         
@@ -225,7 +225,7 @@ class Hash_Set:
                 slot_new = self._find_slot(data)
                 # Not adding duplicates
                 if data not in slot_new:
-                    slot_new.insert(0, data)
+                    slot_new.insert(data)
         return
 
     def is_identical(self, target):

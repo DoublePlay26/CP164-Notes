@@ -1,0 +1,124 @@
+
+-------------------------------------------------------
+LabAssignment  Testing
+-------------------------------------------------------
+Author  Nicolas Mills
+ID      180856100
+Email   mill6100@mylaurier.ca
+Version yyyy-mm-dd
+-------------------------------------------------------
+
+-------------------------------------------------------
+Task 1
+-------------------------------------------------------
+Using array-based list Hash_Set
+
+Total Comparisons: 5,488,320
+Word with max comparisons: a: 990
+
+-------------------------------------------------------
+Task 2
+-------------------------------------------------------
+Using array-based Sorted List Hash_Set
+
+Total Comparisons: 28,358,903
+Word with max comparisons: almost: 41,198
+
+-------------------------------------------------------
+Task 3
+-------------------------------------------------------
+Using Linked BST Hash_Set
+
+Total Comparisons: 3,174,786
+Word with max comparisons: the: 71,091
+
+-------------------------------------------------------
+Task 4
+-------------------------------------------------------
+Testing BST#node_counts
+
+
+Empty BST
+Nodes w/ ZERO children: 0	Expected: 0
+Nodes w/ ONE children: 0		Expected: 0
+Nodes w/ TWO children: 0		Expected: 0
+
+
+Non-empty BST with only two nodes
+Nodes w/ ZERO children: 1	Expected: 1
+Nodes w/ ONE child: 1		Expected: 1
+Nodes w/ TWO children: 0		Expected: 0
+
+
+Non-empty BALANCED BST with 3 nodes
+Nodes w/ ZERO children: 2	Expected: 2
+Nodes w/ ONE child: 0		Expected: 0
+Nodes w/ TWO children: 1		Expected: 1
+
+
+Non-empty UNBALANCED BST with 3 nodes
+Nodes w/ ZERO children: 1	Expected: 1
+Nodes w/ ONE child: 2		Expected: 2
+Nodes w/ TWO children: 0		Expected: 0
+
+
+Testing BST#__contains__
+
+
+Empty BST
+Key: 6
+Key in bst? False	Expected: False
+
+
+Non-empty BST, key NOT in bst
+Key: 6
+Key in bst? False	Expected: False
+
+
+Non-empty BST, key IN bst
+Key: 6
+Key in bst? True	Expected: True
+
+
+Testing BST#parent (iterative)
+
+
+Empty BST
+Cannot locate parent in an empty BST. Assertion thrown correctly.
+
+
+Non-empty BST, key NOT in bst
+BST Contents: [5, 4, 7, 2, 6, 8, 3]
+Key: 9
+Parent of key: None
+Expected: None
+
+
+Non-empty BST, key IN bst
+BST Contents: [5, 4, 7, 2, 6, 8, 3]
+Key: 7
+Parent of key: 5
+Expected: 5
+
+
+Testing BST#parent (recursive)
+
+
+Empty BST
+Cannot locate parent in an empty BST. Assertion thrown correctly.
+
+
+Non-empty BST, key NOT in bst
+BST Contents: [5, 4, 7, 2, 6, 8, 3]
+Key: 9
+Parent of key: None
+Expected: None
+
+
+Non-empty BST, key IN bst
+BST Contents: [5, 4, 7, 2, 6, 8, 3]
+Key: 7
+Parent of key: 5
+Expected: 5
+
+-------------------------------------------------------

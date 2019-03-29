@@ -13,12 +13,15 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="union" key="selection"/>
+		<item value="levelorder" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
-		<item value="false" key="wrap"/>
+		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="remove"/>
+			<item value="levelorder"/>
+			<item value="level_order"/>
 			<item value="union"/>
 			<item value="_Queue_N"/>
 			<item value="_Queue"/>
@@ -31,8 +34,6 @@
 			<item value="queue"/>
 			<item value="q"/>
 			<item value="stack"/>
-			<item value="s"/>
-			<item value="source"/>
 		</list>
 		<list key="replacehistory">
 			<item value="hr_movies"/>

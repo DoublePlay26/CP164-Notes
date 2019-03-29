@@ -79,7 +79,7 @@ class Sorted_List:
         """
         # Your code here
 
-        return
+        return len(self._values)
 
     def _binary_search(self, key):
         """
@@ -116,7 +116,7 @@ class Sorted_List:
         """
         # Your code here
 
-        return
+        return -len(self._values) < i < len(self._values)
 
     def clean(self):
         """
@@ -261,7 +261,14 @@ class Sorted_List:
         -------------------------------------------------------
         """
         # Your code here
-
+        if len(self._values) == 0:
+            self._values.append(value)
+        else:
+            index = 0
+            current = self._values[index]
+            while index < len(self._values) and current < value:
+                index += 1
+            self._values.insert(index, value)
         return
 
     def intersection(self, source1, source2):
